@@ -1,0 +1,376 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 36802,
+	"name": "Travel",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "PlatformInfo",
+			"name": "Platform info",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "lmv6wb3s6kp",
+	"objectTypes": {
+		"items": [
+			"Background",
+			"Hamburger",
+			"AquaBar",
+			"Breadcrumb",
+			"TopIcon",
+			"TopTop",
+			"TopBottom",
+			"Touch",
+			"Browser",
+			"PlatformInfo",
+			"LoginPanel",
+			"LandingGo2",
+			"Trees",
+			"Intro",
+			"Title",
+			"TopTitle",
+			"Cloud2",
+			"TravelMode",
+			"TravelHelpBack",
+			"TravelHelpText",
+			"TravelTimeText",
+			"TravelVehicle",
+			"TravelPoint",
+			"GoButton"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"TravelHelpBack",
+				"TravelHelpText"
+			]
+		}
+	],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Clock",
+			"Help",
+			"Landing",
+			"Main",
+			"Motion"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Main Events",
+			"Landing Events",
+			"Help Events",
+			"Clock Events",
+			"Motion Events"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "Montserrat-Bold.woff",
+							"type": "application/font-woff",
+							"sid": 206294930194343,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-Medium.woff",
+							"type": "application/font-woff",
+							"sid": 388687267965573,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-Regular.woff",
+							"type": "application/font-woff",
+							"sid": 538054873830600,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-SemiBold.woff",
+							"type": "application/font-woff",
+							"sid": 756241907770385,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-BoldItalic.woff",
+							"type": "application/font-woff",
+							"sid": 298455357878779,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-Italic.woff",
+							"type": "application/font-woff",
+							"sid": 425169071154666,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-MediumItalic.woff",
+							"type": "application/font-woff",
+							"sid": 972147371971151,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Montserrat-SemiBoldItalic.woff",
+							"type": "application/font-woff",
+							"sid": 418884731282190,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Monserrat"
+				}
+			]
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 859493821619820,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 466442354524389,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 374876072687531,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 913259928998265,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 242723942872079,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 333305940132892,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 974791461869861,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 480,
+	"viewportHeight": 854,
+	"firstLayout": "Landing"
+}

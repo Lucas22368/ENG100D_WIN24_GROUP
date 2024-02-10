@@ -1,0 +1,132 @@
+{
+	"name": "Main Events",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Help Events"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Clock Events"
+		},
+		{
+			"eventType": "comment",
+			"text": "Main Green Travel layout with events in Main Events"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 613956730179708
+				}
+			],
+			"actions": [],
+			"sid": 130323143133200
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 504125729733670,
+					"parameters": {
+						"object": "TravelMode"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 922205429965839,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 120806586826167,
+							"parameters": {
+								"first-value": "TravelMode.AnimationFrame",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 374779370899101,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 125208443243163
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 283435081642865
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 768174449886190,
+							"parameters": {
+								"first-value": "TravelMode.AnimationFrame",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 855585999038323,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 796722526788802
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 692818744742815
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 746211509764549,
+							"parameters": {
+								"first-value": "TravelMode.AnimationFrame",
+								"comparison": 0,
+								"second-value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 413174778247748,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 300454768769644
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 331274383537989
+}
