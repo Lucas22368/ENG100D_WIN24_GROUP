@@ -1,0 +1,82 @@
+{
+	"name": "Reset2",
+	"plugin-id": "Sprite",
+	"sid": 648334593396481,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 373036202265908
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 758623449749534
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 632971869328255
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 578676137363817
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 40,
+						"originX": 0.5495495495495496,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2060723,
+						"collisionPoly": {
+							"points": [
+								0.04144144144144144,
+								0.11244019138755983,
+								0.5495495495495496,
+								0.02631578947368421,
+								1,
+								0.11244019138755983,
+								1,
+								0.5,
+								1,
+								0.8588516746411484,
+								0.5495495495495496,
+								0.9449760765550238,
+								0.04144144144144144,
+								0.8588516746411484,
+								0.009009009009009009,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 458625705034934,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
