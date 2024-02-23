@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 36802,
+	"savedWithRelease": 37900,
 	"name": "Travel",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -52,6 +52,13 @@
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -110,7 +117,13 @@
 			"TravelTimeText",
 			"TravelVehicle",
 			"TravelPoint",
-			"GoButton"
+			"GoButton",
+			"Sprite",
+			"Sprite2",
+			"Sprite3",
+			"LandingGo3",
+			"Sprite4",
+			"Reset"
 		],
 		"subfolders": []
 	},
@@ -133,7 +146,8 @@
 			"Help",
 			"Landing",
 			"Main",
-			"Motion"
+			"Motion",
+			"Star Test"
 		],
 		"subfolders": []
 	},
@@ -143,7 +157,9 @@
 			"Landing Events",
 			"Help Events",
 			"Clock Events",
-			"Motion Events"
+			"Motion Events",
+			"Star Event Test",
+			"Star Display Event"
 		],
 		"subfolders": []
 	},
@@ -315,6 +331,10 @@
 				"subfolders": []
 			}
 		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
 	},
 	"properties": {
 		"description": "",

@@ -1,0 +1,167 @@
+{
+	"name": "Star Event Test",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 220297931523588,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite2",
+					"sid": 944431688938563
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "LandingGo3",
+					"sid": 193051399502293,
+					"parameters": {
+						"instance-variable": "Points",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 634763673841730
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 144454350395118,
+					"parameters": {
+						"object": "LandingGo3"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "LandingGo3",
+					"sid": 460340738069792,
+					"parameters": {
+						"instance-variable": "Points",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 811175070926356,
+					"parameters": {
+						"object-to-create": "Sprite4",
+						"layer": "0",
+						"x": "100",
+						"y": "265",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 133041949318724
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 404225140037581,
+					"parameters": {
+						"object": "LandingGo3"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "LandingGo3",
+					"sid": 843468805045713,
+					"parameters": {
+						"instance-variable": "Points",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 603284695611065,
+					"parameters": {
+						"object-to-create": "Sprite3",
+						"layer": "0",
+						"x": "100",
+						"y": "265",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 638124779369346
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 987621338378340,
+					"parameters": {
+						"object": "LandingGo3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 318545992253613,
+					"parameters": {
+						"object-to-create": "Reset",
+						"layer": "0",
+						"x": "200",
+						"y": "265",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 233752857765767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 697033351424803,
+					"parameters": {
+						"object": "Reset"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 122897058530569,
+					"parameters": {
+						"layout": "Star Test"
+					}
+				}
+			],
+			"sid": 853165717412732
+		}
+	],
+	"sid": 152870783037011
+}
