@@ -134,6 +134,19 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 950462150635469,
+					"parameters": {
+						"object-to-create": "ResetText",
+						"layer": "0",
+						"x": "180",
+						"y": "265",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 233752857765767
@@ -161,6 +174,30 @@
 				}
 			],
 			"sid": 853165717412732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 272732904058791,
+					"parameters": {
+						"object": "Reset2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 369534880565299,
+					"parameters": {
+						"layout": "Star Test"
+					}
+				}
+			],
+			"sid": 125989348793686
 		}
 	],
 	"sid": 152870783037011

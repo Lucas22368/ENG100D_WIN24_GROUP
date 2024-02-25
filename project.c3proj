@@ -145,6 +145,7 @@
 			"Sprite3",
 			"LandingGo3",
 			"Sprite4",
+<<<<<<< HEAD
 			"Reset"
 =======
 			"grid",
@@ -153,6 +154,12 @@
 			"Mouse",
 			"car_trail"
 >>>>>>> Stashed changes
+=======
+			"Reset",
+			"Reset2",
+			"ResetText",
+			"Text"
+>>>>>>> d5ed362fa1f030fcecaea2e2f65f2609e98d5b88
 		],
 		"subfolders": []
 	},
