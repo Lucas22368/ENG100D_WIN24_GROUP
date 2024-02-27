@@ -22,13 +22,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Mouse",
-			"name": "Mouse",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "PlatformInfo",
 			"name": "Platform info",
 			"author": "Scirra",
@@ -45,13 +38,6 @@
 			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -99,13 +85,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -139,7 +118,6 @@
 			"TravelVehicle",
 			"TravelPoint",
 			"GoButton",
-<<<<<<< Updated upstream
 			"Sprite",
 			"Sprite2",
 			"Sprite3",
@@ -147,6 +125,7 @@
 			"Sprite4",
 <<<<<<< HEAD
 			"Reset"
+<<<<<<< HEAD
 =======
 			"grid",
 			"Tilemap",
@@ -160,6 +139,8 @@
 			"ResetText",
 			"Text"
 >>>>>>> d5ed362fa1f030fcecaea2e2f65f2609e98d5b88
+=======
+>>>>>>> parent of b3e7ed8 (grid work)
 		],
 		"subfolders": []
 	},
