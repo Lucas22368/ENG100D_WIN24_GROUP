@@ -2,43 +2,47 @@
 	"name": "Motion Events",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 711167141471887
+			"eventType": "comment",
+			"text": "Uses the tween behavior to move the vehicle to the TravelPoint"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-enabled",
-					"objectClass": "car",
-					"sid": 576631494390914,
-					"behaviorType": "TileMovement"
+					"id": "on-clicked",
+					"objectClass": "GoButton",
+					"sid": 297503378008036
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 635155873593911,
+			"children": [
 				{
-					"id": "spawn-another-object",
-					"objectClass": "car",
-					"sid": 547431653295563,
-					"parameters": {
-						"object": "car_trail",
-						"layer": "0",
-						"image-point": "1",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "car_trail",
-					"sid": 706223827553931,
-					"parameters": {
-						"opacity": "5"
-					}
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "TravelVehicle",
+							"sid": 825666822565918,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "TravelPoint.x",
+								"end-y": "TravelPoint.y",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 398814522716423
 				}
-			],
-			"sid": 597456322347018
+			]
 		}
 	],
 	"sid": 365148969480927

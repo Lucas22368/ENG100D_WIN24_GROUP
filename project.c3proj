@@ -126,6 +126,7 @@
 <<<<<<< HEAD
 			"Reset"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			"grid",
 			"Tilemap",
@@ -139,6 +140,8 @@
 			"ResetText",
 			"Text"
 >>>>>>> d5ed362fa1f030fcecaea2e2f65f2609e98d5b88
+=======
+>>>>>>> parent of b3e7ed8 (grid work)
 =======
 >>>>>>> parent of b3e7ed8 (grid work)
 		],
