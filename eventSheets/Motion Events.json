@@ -9,37 +9,39 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "GoButton",
-					"sid": 297503378008036
+					"id": "is-moving",
+					"objectClass": "car",
+					"sid": 259163511778174,
+					"behaviorType": "TileMovement"
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "car",
+					"sid": 708664477978320,
+					"parameters": {
+						"object": "carTrail",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "carTrail",
+					"sid": 208774487742624,
+					"parameters": {
+						"opacity": "5"
+					}
+				}
+			],
 			"sid": 635155873593911,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [],
-					"actions": [
-						{
-							"id": "tween-two-properties",
-							"objectClass": "TravelVehicle",
-							"sid": 825666822565918,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"\"",
-								"property": "position",
-								"end-x": "TravelPoint.x",
-								"end-y": "TravelPoint.y",
-								"time": "2",
-								"ease": "default",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 398814522716423
 				}
 			]

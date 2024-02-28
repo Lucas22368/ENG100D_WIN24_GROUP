@@ -44,6 +44,54 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Tilemap",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 49,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 30,
+							"height": 53,
+							"max-width": 30,
+							"max-height": 53,
+							"data": "271x65,45,52x65,45,52x65,3x45,52x65,5x45,52x65,45,52x65,45,3x65,3x45,69,45x65,2x45,2x65,45,49x65,45,2x65,45,49x65,4x45,884x65"
+						},
+						"tile-width": 32,
+						"tile-height": 32,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 960,
+						"height": 1708,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 989363650959697,
@@ -113,37 +161,7 @@
 			"name": "SubmitLayer",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "TravelPoint",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 346,
-						"y": 403,
-						"width": 30.463092423455635,
-						"height": 30.463092423455635,
-						"originX": 0.4959349593495935,
-						"originY": 0.4715447154471545,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 206534946463260,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -179,122 +197,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TopBottom",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 2,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 37,
-					"instanceVariables": {},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-bottom",
-								"right-edge": "none",
-								"bottom-edge": "none",
-								"enabled": false
-							}
-						}
-					},
-					"world": {
-						"x": 2,
-						"y": 855,
-						"width": 480.9958162251656,
-						"height": 318.6638772541793,
-						"originX": 0,
-						"originY": 0.9868421052631579,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TopTop",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 38,
-					"instanceVariables": {},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "none",
-								"bottom-edge": "none",
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 2,
-						"y": 1,
-						"width": 479.99999999999994,
-						"height": 65,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AquaBar",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 39,
-					"instanceVariables": {
-						"selected": 0
-					},
-					"behaviors": {
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 57,
-						"y": 5,
-						"width": 299.5163723282541,
-						"height": 37.333214262723956,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TravelVehicle",
+					"type": "car",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -305,22 +208,27 @@
 					"uid": 40,
 					"instanceVariables": {},
 					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Tween": {
+						"TileMovement": {
 							"properties": {
-								"enabled": true
+								"grid-width": 32,
+								"grid-height": 32,
+								"grid-offset-x": 0,
+								"grid-offset-y": 0,
+								"speed-x": 100,
+								"speed-y": 100,
+								"enabled": true,
+								"default-controls": true,
+								"isometric": false
 							}
 						}
 					},
 					"world": {
-						"x": 347,
-						"y": 403,
-						"width": 55.73899258255075,
-						"height": 55.413033561600166,
-						"originX": 0.5087719298245614,
-						"originY": 0.47058823529411764,
+						"x": 160,
+						"y": 192,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -329,37 +237,6 @@
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "GoButton",
-					"properties": {
-						"type": "button",
-						"text": "Go!",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 42,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 202,
-						"y": 616,
-						"width": 72,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				}
 			],

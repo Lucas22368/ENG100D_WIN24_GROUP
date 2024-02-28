@@ -9,7 +9,7 @@
 					"objectClass": "Sprite2",
 					"sid": 220297931523588,
 					"parameters": {
-						"object": "Sprite"
+						"object": "sprite"
 					}
 				}
 			],
