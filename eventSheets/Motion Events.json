@@ -9,42 +9,122 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-moving",
-					"objectClass": "car",
-					"sid": 259163511778174,
-					"behaviorType": "TileMovement"
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 966212011232626,
+					"parameters": {
+						"object": "Reset"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "spawn-another-object",
+					"id": "set-x",
 					"objectClass": "car",
-					"sid": 708664477978320,
+					"sid": 630963676835847,
 					"parameters": {
-						"object": "carTrail",
-						"layer": "0",
-						"image-point": "0",
-						"create-hierarchy": false
+						"x": "car.XVal"
 					}
 				},
 				{
-					"id": "set-opacity",
-					"objectClass": "carTrail",
-					"sid": 208774487742624,
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 607791616270957,
 					"parameters": {
-						"opacity": "5"
+						"y": "car.YVal"
 					}
 				}
 			],
-			"sid": 635155873593911,
-			"children": [
+			"sid": 563371597121148
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [],
-					"sid": 398814522716423
+					"id": "on-drop",
+					"objectClass": "car",
+					"sid": 796211588881624,
+					"behaviorType": "DragDrop"
 				}
-			]
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 488784901768220,
+					"parameters": {
+						"x": "round(car.X / 32) * 32"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 314238604068395,
+					"parameters": {
+						"y": "round(car.Y / 32) * 32"
+					}
+				}
+			],
+			"sid": 504810262136925
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "car",
+					"sid": 573688114987458,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 829167086958237,
+					"parameters": {
+						"object-to-create": "carTrail",
+						"layer": "0",
+						"x": "round(car.X / 32) * 32",
+						"y": "round(car.Y /32) * 32",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 420310438101051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "car",
+					"sid": 397857592671217,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "car",
+					"sid": 788803569552032,
+					"parameters": {
+						"instance-variable": "XVal",
+						"value": "car.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "car",
+					"sid": 922716497855664,
+					"parameters": {
+						"instance-variable": "YVal",
+						"value": "car.Y"
+					}
+				}
+			],
+			"sid": 194767668013103
 		}
 	],
 	"sid": 365148969480927

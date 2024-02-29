@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -92,15 +99,15 @@
 		},
 		{
 			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -142,7 +149,8 @@
 			"ResetText",
 			"Text",
 			"Tilemap",
-			"carTrail"
+			"carTrail",
+			"Text2"
 		],
 		"subfolders": []
 	},

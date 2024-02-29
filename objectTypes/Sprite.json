@@ -3,7 +3,22 @@
 	"plugin-id": "Sprite",
 	"sid": 860533236677990,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "XVal",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 778030151542329
+		},
+		{
+			"name": "YVal",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 564301319993761
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",

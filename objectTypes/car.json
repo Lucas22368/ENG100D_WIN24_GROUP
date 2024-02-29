@@ -3,12 +3,34 @@
 	"plugin-id": "Sprite",
 	"sid": 849451063504209,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "XVal",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 310227038941374
+		},
+		{
+			"name": "YVal",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 170323037075975
+		},
+		{
+			"name": "check",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 222034772543045
+		}
+	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "TileMovement",
-			"name": "TileMovement",
-			"sid": 940008630287153
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 281240985301484
 		}
 	],
 	"effectTypes": [],

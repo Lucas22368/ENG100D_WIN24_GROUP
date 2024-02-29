@@ -16,7 +16,10 @@
 						"live-preview": false
 					},
 					"uid": 43,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"XVal": 0,
+						"YVal": 0
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
