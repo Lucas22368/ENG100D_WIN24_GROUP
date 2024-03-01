@@ -150,7 +150,9 @@
 			"Text",
 			"Tilemap",
 			"carTrail",
-			"Text2"
+			"Text2",
+			"Sprite5",
+			"Square_graysvg"
 		],
 		"subfolders": []
 	},

@@ -51,7 +51,7 @@
 				{
 					"id": "set-x",
 					"objectClass": "car",
-					"sid": 488784901768220,
+					"sid": 457806222056567,
 					"parameters": {
 						"x": "round(car.X / 32) * 32"
 					}
@@ -59,7 +59,7 @@
 				{
 					"id": "set-y",
 					"objectClass": "car",
-					"sid": 314238604068395,
+					"sid": 494488562577810,
 					"parameters": {
 						"y": "round(car.Y / 32) * 32"
 					}
@@ -79,20 +79,78 @@
 			],
 			"actions": [
 				{
+					"id": "set-instvar-value",
+					"objectClass": "car",
+					"sid": 419624578503208,
+					"parameters": {
+						"instance-variable": "XVal",
+						"value": "car.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "car",
+					"sid": 980570009008964,
+					"parameters": {
+						"instance-variable": "YVal",
+						"value": "car.Y"
+					}
+				},
+				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 829167086958237,
+					"sid": 214309588055025,
 					"parameters": {
 						"object-to-create": "carTrail",
 						"layer": "0",
 						"x": "round(car.X / 32) * 32",
-						"y": "round(car.Y /32) * 32",
+						"y": "round(car.Y / 32) * 32",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
 				}
 			],
-			"sid": 420310438101051
+			"sid": 420310438101051,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "car",
+							"sid": 645522126458055,
+							"parameters": {
+								"object": "Square_graysvg"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "drop",
+							"objectClass": "car",
+							"sid": 520531708490128,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "set-x",
+							"objectClass": "car",
+							"sid": 660523890606688,
+							"parameters": {
+								"x": "car.X"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "car",
+							"sid": 467715866648470,
+							"parameters": {
+								"y": "car.Y + 32"
+							}
+						}
+					],
+					"sid": 560359647377033
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -108,7 +166,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "car",
-					"sid": 788803569552032,
+					"sid": 339669778509113,
 					"parameters": {
 						"instance-variable": "XVal",
 						"value": "car.X"
@@ -117,7 +175,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "car",
-					"sid": 922716497855664,
+					"sid": 741200717569177,
 					"parameters": {
 						"instance-variable": "YVal",
 						"value": "car.Y"
@@ -125,6 +183,27 @@
 				}
 			],
 			"sid": 194767668013103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "carTrail",
+					"sid": 338140180617453,
+					"parameters": {
+						"object": "Square_graysvg"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 857047143292172
+				}
+			],
+			"sid": 341101733299426
 		}
 	],
 	"sid": 365148969480927
