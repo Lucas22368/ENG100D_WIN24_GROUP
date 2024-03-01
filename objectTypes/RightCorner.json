@@ -1,14 +1,14 @@
 {
-	"name": "Square_graysvg",
+	"name": "RightCorner",
 	"plugin-id": "Sprite",
-	"sid": 988714345686209,
+	"sid": 729487741084328,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 529510404790494
+			"sid": 574240946012982
 		}
 	],
 	"effectTypes": [],
@@ -24,13 +24,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2136275,
+						"imageSpriteId": 1750425,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 454802566651277,
+				"sid": 633992209789493,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

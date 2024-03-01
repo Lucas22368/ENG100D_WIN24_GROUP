@@ -152,7 +152,9 @@
 			"carTrail",
 			"Text2",
 			"Sprite5",
-			"Square_graysvg"
+			"TopBorder",
+			"RightBorder",
+			"RightCorner"
 		],
 		"subfolders": []
 	},

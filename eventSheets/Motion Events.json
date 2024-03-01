@@ -110,47 +110,7 @@
 					}
 				}
 			],
-			"sid": 420310438101051,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "car",
-							"sid": 645522126458055,
-							"parameters": {
-								"object": "Square_graysvg"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "drop",
-							"objectClass": "car",
-							"sid": 520531708490128,
-							"behaviorType": "DragDrop"
-						},
-						{
-							"id": "set-x",
-							"objectClass": "car",
-							"sid": 660523890606688,
-							"parameters": {
-								"x": "car.X"
-							}
-						},
-						{
-							"id": "set-y",
-							"objectClass": "car",
-							"sid": 467715866648470,
-							"parameters": {
-								"y": "car.Y + 32"
-							}
-						}
-					],
-					"sid": 560359647377033
-				}
-			]
+			"sid": 420310438101051
 		},
 		{
 			"eventType": "block",
@@ -190,9 +150,9 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "carTrail",
-					"sid": 338140180617453,
+					"sid": 929905044990714,
 					"parameters": {
-						"object": "Square_graysvg"
+						"object": "TopBorder"
 					}
 				}
 			],
@@ -204,6 +164,146 @@
 				}
 			],
 			"sid": 341101733299426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 132637268836718,
+					"parameters": {
+						"object": "RightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 374245467616490,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 978115104238982,
+					"parameters": {
+						"x": "car.X - 32"
+					}
+				}
+			],
+			"sid": 878530678062540
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 637674528293814,
+					"parameters": {
+						"object": "TopBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 680288761895546,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 236836495683681,
+					"parameters": {
+						"y": "car.Y + 32"
+					}
+				}
+			],
+			"sid": 609768343305651
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "carTrail",
+					"sid": 690718803630425,
+					"parameters": {
+						"object": "RightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 218500804640544
+				}
+			],
+			"sid": 840738352290515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 251698176193764,
+					"parameters": {
+						"object": "RightCorner"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 766868309907960,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 682039647416014,
+					"parameters": {
+						"x": "round((car.X - 17) / 32) * 32"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 405695032794161,
+					"parameters": {
+						"y": "round((car.Y + 17) / 32) * 32"
+					}
+				}
+			],
+			"sid": 871434490950333
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "carTrail",
+					"sid": 386376938574436,
+					"parameters": {
+						"object": "RightCorner"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 181214677038325
+				}
+			],
+			"sid": 374606220254346
 		}
 	],
 	"sid": 365148969480927
