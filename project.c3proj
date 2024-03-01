@@ -154,7 +154,14 @@
 			"Sprite5",
 			"TopBorder",
 			"RightBorder",
-			"RightCorner"
+			"RightCorner",
+			"TravelMode2",
+			"TravelMode3",
+			"Bike",
+			"BikeSwitch",
+			"BikePath",
+			"Sprite6",
+			"BikeTrail"
 		],
 		"subfolders": []
 	},
