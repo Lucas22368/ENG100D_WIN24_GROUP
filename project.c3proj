@@ -150,7 +150,18 @@
 			"Text",
 			"Tilemap",
 			"carTrail",
-			"Text2"
+			"Text2",
+			"Sprite5",
+			"TopBorder",
+			"RightBorder",
+			"RightCorner",
+			"TravelMode2",
+			"TravelMode3",
+			"Bike",
+			"BikeSwitch",
+			"BikePath",
+			"Sprite6",
+			"BikeTrail"
 		],
 		"subfolders": []
 	},

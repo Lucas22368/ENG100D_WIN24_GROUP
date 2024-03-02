@@ -19,19 +19,11 @@
 			],
 			"actions": [
 				{
-					"id": "set-x",
-					"objectClass": "car",
-					"sid": 630963676835847,
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 820612415500218,
 					"parameters": {
-						"x": "car.XVal"
-					}
-				},
-				{
-					"id": "set-y",
-					"objectClass": "car",
-					"sid": 607791616270957,
-					"parameters": {
-						"y": "car.YVal"
+						"layout": "Motion"
 					}
 				}
 			],
@@ -51,7 +43,7 @@
 				{
 					"id": "set-x",
 					"objectClass": "car",
-					"sid": 488784901768220,
+					"sid": 457806222056567,
 					"parameters": {
 						"x": "round(car.X / 32) * 32"
 					}
@@ -59,7 +51,7 @@
 				{
 					"id": "set-y",
 					"objectClass": "car",
-					"sid": 314238604068395,
+					"sid": 494488562577810,
 					"parameters": {
 						"y": "round(car.Y / 32) * 32"
 					}
@@ -79,36 +71,9 @@
 			],
 			"actions": [
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 829167086958237,
-					"parameters": {
-						"object-to-create": "carTrail",
-						"layer": "0",
-						"x": "round(car.X / 32) * 32",
-						"y": "round(car.Y /32) * 32",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				}
-			],
-			"sid": 420310438101051
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-drag-start",
-					"objectClass": "car",
-					"sid": 397857592671217,
-					"behaviorType": "DragDrop"
-				}
-			],
-			"actions": [
-				{
 					"id": "set-instvar-value",
 					"objectClass": "car",
-					"sid": 788803569552032,
+					"sid": 419624578503208,
 					"parameters": {
 						"instance-variable": "XVal",
 						"value": "car.X"
@@ -117,14 +82,482 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "car",
-					"sid": 922716497855664,
+					"sid": 980570009008964,
 					"parameters": {
 						"instance-variable": "YVal",
 						"value": "car.Y"
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 832409906801370,
+					"parameters": {
+						"object-to-create": "carTrail",
+						"layer": "2",
+						"x": "round(car.X / 32) * 32",
+						"y": "round(car.Y / 32) * 32",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "carTrail",
+					"sid": 531306858828249,
+					"parameters": {
+						"width": "30",
+						"height": "30"
+					}
 				}
 			],
-			"sid": 194767668013103
+			"sid": 420310438101051,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "car",
+							"sid": 721073894738011,
+							"parameters": {
+								"object": "BikeTrail"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "BikeTrail",
+							"sid": 755906896595798
+						}
+					],
+					"sid": 324544180820885
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "carTrail",
+					"sid": 929905044990714,
+					"parameters": {
+						"object": "TopBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 857047143292172
+				}
+			],
+			"sid": 341101733299426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 132637268836718,
+					"parameters": {
+						"object": "RightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 374245467616490,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 978115104238982,
+					"parameters": {
+						"x": "car.X - 32"
+					}
+				}
+			],
+			"sid": 878530678062540
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 637674528293814,
+					"parameters": {
+						"object": "TopBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 680288761895546,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 236836495683681,
+					"parameters": {
+						"y": "car.Y + 32"
+					}
+				}
+			],
+			"sid": 609768343305651
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "carTrail",
+					"sid": 690718803630425,
+					"parameters": {
+						"object": "RightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 218500804640544
+				}
+			],
+			"sid": 840738352290515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 251698176193764,
+					"parameters": {
+						"object": "RightCorner"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 766868309907960,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 682039647416014,
+					"parameters": {
+						"x": "round((car.X - 17) / 32) * 32"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 405695032794161,
+					"parameters": {
+						"y": "round((car.Y + 17) / 32) * 32"
+					}
+				}
+			],
+			"sid": 871434490950333
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "carTrail",
+					"sid": 386376938574436,
+					"parameters": {
+						"object": "RightCorner"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 181214677038325
+				}
+			],
+			"sid": 374606220254346
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 964613877767127,
+					"parameters": {
+						"object": "BikeSwitch"
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "car",
+					"sid": 507729392693530
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 715931014387315,
+					"parameters": {
+						"object-to-create": "Bike",
+						"layer": "3",
+						"x": "car.X",
+						"y": "car.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Bike",
+					"sid": 106087543684187,
+					"parameters": {
+						"width": "32",
+						"height": "32"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "car",
+					"sid": 284129946649903
+				}
+			],
+			"sid": 402205284135350
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 482710616080034,
+					"parameters": {
+						"object": "TravelMode"
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Bike",
+					"sid": 319020990870843
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 448974774259066,
+					"parameters": {
+						"object-to-create": "car",
+						"layer": "3",
+						"x": "Bike.X",
+						"y": "Bike.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "car",
+					"sid": 997357681087028,
+					"parameters": {
+						"width": "32",
+						"height": "32"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Bike",
+					"sid": 513568385537791
+				}
+			],
+			"sid": 302441824478485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 733365033527759,
+					"parameters": {
+						"object": "BikePath"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 330427634028846,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"sid": 996079999796884
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "car",
+					"sid": 793480572932566,
+					"parameters": {
+						"object": "BikePath"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 340188580013498,
+					"parameters": {
+						"x": "352"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 362718340154701,
+					"parameters": {
+						"y": "384"
+					}
+				}
+			],
+			"sid": 778991579919273,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "BikeTrail",
+							"sid": 642421430726808,
+							"parameters": {
+								"object": "BikePath"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "BikeTrail",
+							"sid": 378750923726719
+						}
+					],
+					"sid": 932040549606658
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "Bike",
+					"sid": 683592743163531,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 859489384573521,
+					"parameters": {
+						"object-to-create": "BikeTrail",
+						"layer": "2",
+						"x": "round(Bike.X / 32) * 32",
+						"y": "round(Bike.Y / 32) * 32",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BikeTrail",
+					"sid": 475566009409469,
+					"parameters": {
+						"width": "30",
+						"height": "30"
+					}
+				}
+			],
+			"sid": 644331643458595,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Bike",
+							"sid": 784404821694566,
+							"parameters": {
+								"object": "carTrail"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "carTrail",
+							"sid": 449139112039919
+						}
+					],
+					"sid": 816832854911123
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Bike",
+					"sid": 638047512748698,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Bike",
+					"sid": 349836125301199,
+					"parameters": {
+						"x": "round(Bike.X / 32) * 32"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Bike",
+					"sid": 160443037276516,
+					"parameters": {
+						"y": "round(Bike.Y / 32) * 32"
+					}
+				}
+			],
+			"sid": 689242618853439
 		}
 	],
 	"sid": 365148969480927
