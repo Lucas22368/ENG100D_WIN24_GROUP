@@ -24,6 +24,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 222034772543045
+		},
+		{
+			"name": "carEmission",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 786118152875929
 		}
 	],
 	"behaviorTypes": [

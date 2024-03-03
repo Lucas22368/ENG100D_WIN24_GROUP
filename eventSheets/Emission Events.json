@@ -1,0 +1,69 @@
+{
+	"name": "Emission Events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "emissionTotal",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 441645031801845
+		},
+		{
+			"eventType": "variable",
+			"name": "carEmission",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 144427859962559
+		},
+		{
+			"eventType": "variable",
+			"name": "busEmission",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 445669556899520
+		},
+		{
+			"eventType": "variable",
+			"name": "bikeEmission",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 649729467409984
+		},
+		{
+			"functionName": "setEmission",
+			"functionDescription": "changes emission value",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 888530770688220,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "carEmission"
+					}
+				}
+			],
+			"sid": 805235864340791
+		}
+	],
+	"sid": 500283305365175
+}

@@ -2,6 +2,10 @@
 	"name": "Motion Events",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Emission Events"
+		},
+		{
 			"eventType": "comment",
 			"text": "Uses the tween behavior to move the vehicle to the TravelPoint"
 		},
@@ -63,20 +67,17 @@
 					"parameters": {
 						"y": "round(car.Y / 32) * 32"
 					}
+				},
+				{
+					"callFunction": "setEmission",
+					"sid": 426800748523458
 				}
 			],
 			"sid": 504810262136925
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-dragging",
-					"objectClass": "car",
-					"sid": 573688114987458,
-					"behaviorType": "DragDrop"
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "set-instvar-value",
@@ -145,6 +146,10 @@
 			]
 		},
 		{
+			"eventType": "comment",
+			"text": "barrier collision properties"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -154,6 +159,12 @@
 					"parameters": {
 						"object": "TopBorder"
 					}
+				},
+				{
+					"id": "is-dragging",
+					"objectClass": "car",
+					"sid": 972199748339091,
+					"behaviorType": "DragDrop"
 				}
 			],
 			"actions": [
@@ -226,6 +237,10 @@
 			"sid": 609768343305651
 		},
 		{
+			"eventType": "comment",
+			"text": "overlapping trails properties"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -252,7 +267,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "car",
-					"sid": 251698176193764,
+					"sid": 727026794170326,
 					"parameters": {
 						"object": "RightCorner"
 					}
@@ -262,13 +277,13 @@
 				{
 					"id": "drop",
 					"objectClass": "car",
-					"sid": 766868309907960,
+					"sid": 166500718134371,
 					"behaviorType": "DragDrop"
 				},
 				{
 					"id": "set-x",
 					"objectClass": "car",
-					"sid": 682039647416014,
+					"sid": 510762516684895,
 					"parameters": {
 						"x": "round((car.X - 17) / 32) * 32"
 					}
@@ -276,13 +291,13 @@
 				{
 					"id": "set-y",
 					"objectClass": "car",
-					"sid": 405695032794161,
+					"sid": 447133435707792,
 					"parameters": {
 						"y": "round((car.Y + 17) / 32) * 32"
 					}
 				}
 			],
-			"sid": 871434490950333
+			"sid": 822627353480890
 		},
 		{
 			"eventType": "block",
@@ -510,32 +525,34 @@
 						"width": "30",
 						"height": "30"
 					}
+				},
+				{
+					"callFunction": "setEmission",
+					"sid": 718967102583455
 				}
 			],
-			"sid": 644331643458595,
-			"children": [
+			"sid": 644331643458595
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Bike",
-							"sid": 784404821694566,
-							"parameters": {
-								"object": "carTrail"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "carTrail",
-							"sid": 449139112039919
-						}
-					],
-					"sid": 816832854911123
+					"id": "is-overlapping-another-object",
+					"objectClass": "Bike",
+					"sid": 202120724468836,
+					"parameters": {
+						"object": "carTrail"
+					}
 				}
-			]
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "carTrail",
+					"sid": 823190152004239
+				}
+			],
+			"sid": 167436006549731
 		},
 		{
 			"eventType": "block",
@@ -566,6 +583,27 @@
 				}
 			],
 			"sid": 689242618853439
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 210185757571990
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "emissionText",
+					"sid": 948692665498290,
+					"parameters": {
+						"text": "\"emissions used: \" & emissionTotal"
+					}
+				}
+			],
+			"sid": 973251307436971
 		}
 	],
 	"sid": 365148969480927
