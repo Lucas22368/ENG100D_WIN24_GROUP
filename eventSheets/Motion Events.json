@@ -23,11 +23,19 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 820612415500218,
+					"id": "set-x",
+					"objectClass": "car",
+					"sid": 630963676835847,
 					"parameters": {
-						"layout": "Motion"
+						"x": "car.XVal"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "car",
+					"sid": 607791616270957,
+					"parameters": {
+						"y": "car.YVal"
 					}
 				}
 			],
@@ -407,6 +415,10 @@
 				}
 			],
 			"sid": 302441824478485
+		},
+		{
+			"eventType": "comment",
+			"text": "bike properties"
 		},
 		{
 			"eventType": "block",

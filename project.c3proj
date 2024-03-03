@@ -161,7 +161,12 @@
 			"BikeSwitch",
 			"BikePath",
 			"Sprite6",
-			"BikeTrail"
+			"BikeTrail",
+			"emissionBarEmpty",
+			"emissionBarGreen",
+			"emissionBarYellow",
+			"emissionBarRed",
+			"emissionText"
 		],
 		"subfolders": []
 	},
@@ -197,7 +202,8 @@
 			"Clock Events",
 			"Motion Events",
 			"Star Event Test",
-			"Star Display Event"
+			"Star Display Event",
+			"Emission Events"
 		],
 		"subfolders": []
 	},
