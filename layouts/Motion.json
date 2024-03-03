@@ -777,7 +777,7 @@
 						}
 					},
 					"world": {
-						"x": 161,
+						"x": 160,
 						"y": 192,
 						"width": 32,
 						"height": 32,
@@ -846,7 +846,7 @@
 				{
 					"type": "Text2",
 					"properties": {
-						"text": "Undo",
+						"text": "Reset",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,

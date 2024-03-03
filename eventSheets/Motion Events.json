@@ -23,19 +23,11 @@
 			],
 			"actions": [
 				{
-					"id": "set-x",
-					"objectClass": "car",
-					"sid": 630963676835847,
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 820612415500218,
 					"parameters": {
-						"x": "car.XVal"
-					}
-				},
-				{
-					"id": "set-y",
-					"objectClass": "car",
-					"sid": 607791616270957,
-					"parameters": {
-						"y": "car.YVal"
+						"layout": "Motion"
 					}
 				}
 			],
