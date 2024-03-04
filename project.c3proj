@@ -151,7 +151,6 @@
 			"Tilemap",
 			"carTrail",
 			"Text2",
-			"Sprite5",
 			"TopBorder",
 			"RightBorder",
 			"RightCorner",
@@ -160,13 +159,19 @@
 			"Bike",
 			"BikeSwitch",
 			"BikePath",
-			"Sprite6",
 			"BikeTrail",
 			"emissionBarEmpty",
 			"emissionBarGreen",
 			"emissionBarYellow",
 			"emissionBarRed",
-			"emissionText"
+			"emissionText",
+			"StartBackground",
+			"PixelPalm",
+			"Sand",
+			"StartBike",
+			"Start",
+			"Clouds",
+			"GreenTravel"
 		],
 		"subfolders": []
 	},
@@ -190,7 +195,9 @@
 			"Landing",
 			"Main",
 			"Motion",
-			"Star Test"
+			"Star Test",
+			"Start Page",
+			"Level1"
 		],
 		"subfolders": []
 	},
@@ -203,7 +210,9 @@
 			"Motion Events",
 			"Star Event Test",
 			"Star Display Event",
-			"Emission Events"
+			"Emission Events",
+			"Start Page Events",
+			"Level1 Events"
 		],
 		"subfolders": []
 	},
