@@ -5,9 +5,29 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 930512361212798
+				}
+			],
+			"actions": [],
+			"sid": 122018349021757,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 458483447314991
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 354111737258304,
+					"sid": 174723669252158,
 					"parameters": {
 						"object": "Start"
 					}
@@ -17,7 +37,7 @@
 				{
 					"id": "flash",
 					"objectClass": "Start",
-					"sid": 655867773506944,
+					"sid": 843580312861274,
 					"behaviorType": "Flash",
 					"parameters": {
 						"on-time": "0.1",
@@ -28,7 +48,7 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "StartBike",
-					"sid": 191133261907605,
+					"sid": 234234254759916,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"MoveTo\"",
@@ -46,7 +66,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 114854989207217,
+					"sid": 566707273517600,
 					"parameters": {
 						"seconds": "2"
 					}
@@ -54,13 +74,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 488501493005408,
+					"sid": 530840496380010,
 					"parameters": {
 						"layout": "Level1"
 					}
 				}
 			],
-			"sid": 406038573105823
+			"sid": 762368330598548
 		}
 	],
 	"sid": 857393558069957

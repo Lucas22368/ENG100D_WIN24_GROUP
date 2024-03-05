@@ -67,10 +67,6 @@
 					"parameters": {
 						"y": "round(car.Y / 32) * 32"
 					}
-				},
-				{
-					"callFunction": "setEmission",
-					"sid": 426800748523458
 				}
 			],
 			"sid": 504810262136925
@@ -98,26 +94,8 @@
 					}
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 832409906801370,
-					"parameters": {
-						"object-to-create": "carTrail",
-						"layer": "2",
-						"x": "round(car.X / 32) * 32",
-						"y": "round(car.Y / 32) * 32",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "carTrail",
-					"sid": 531306858828249,
-					"parameters": {
-						"width": "30",
-						"height": "30"
-					}
+					"callFunction": "makeCarTrail",
+					"sid": 421584764831291
 				}
 			],
 			"sid": 420310438101051,
@@ -417,10 +395,6 @@
 			"sid": 302441824478485
 		},
 		{
-			"eventType": "comment",
-			"text": "bike properties"
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -498,6 +472,10 @@
 			]
 		},
 		{
+			"eventType": "comment",
+			"text": "bike properties"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -509,33 +487,41 @@
 			],
 			"actions": [
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 859489384573521,
-					"parameters": {
-						"object-to-create": "BikeTrail",
-						"layer": "2",
-						"x": "round(Bike.X / 32) * 32",
-						"y": "round(Bike.Y / 32) * 32",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "BikeTrail",
-					"sid": 475566009409469,
-					"parameters": {
-						"width": "30",
-						"height": "30"
-					}
-				},
-				{
-					"callFunction": "setEmission",
-					"sid": 718967102583455
+					"callFunction": "makeBikeTrail",
+					"sid": 556618821708681
 				}
 			],
 			"sid": 644331643458595
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Bike",
+					"sid": 650269794408141,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Bike",
+					"sid": 309522893813184,
+					"parameters": {
+						"x": "round(Bike.X / 32) * 32"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Bike",
+					"sid": 979142326128023,
+					"parameters": {
+						"y": "round(Bike.Y / 32) * 32"
+					}
+				}
+			],
+			"sid": 600769243823174
 		},
 		{
 			"eventType": "block",
@@ -559,34 +545,108 @@
 			"sid": 167436006549731
 		},
 		{
-			"eventType": "block",
+			"eventType": "comment",
+			"text": "function to create trail"
+		},
+		{
+			"functionName": "makeCarTrail",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
 			"conditions": [
 				{
-					"id": "on-drop",
-					"objectClass": "Bike",
-					"sid": 638047512748698,
-					"behaviorType": "DragDrop"
+					"id": "is-overlapping-another-object",
+					"objectClass": "car",
+					"sid": 390226597929761,
+					"parameters": {
+						"object": "carTrail"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-x",
-					"objectClass": "Bike",
-					"sid": 349836125301199,
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 282492829250753,
 					"parameters": {
-						"x": "round(Bike.X / 32) * 32"
+						"object-to-create": "carTrail",
+						"layer": "2",
+						"x": "round(car.X / 32) * 32",
+						"y": "round(car.Y / 32) * 32",
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				},
 				{
-					"id": "set-y",
-					"objectClass": "Bike",
-					"sid": 160443037276516,
+					"id": "set-size",
+					"objectClass": "carTrail",
+					"sid": 514089870325157,
 					"parameters": {
-						"y": "round(Bike.Y / 32) * 32"
+						"width": "30",
+						"height": "30"
 					}
+				},
+				{
+					"callFunction": "setCarEmission",
+					"sid": 744216321802128
 				}
 			],
-			"sid": 689242618853439
+			"sid": 876940245747510
+		},
+		{
+			"functionName": "makeBikeTrail",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Bike",
+					"sid": 997694659215023,
+					"parameters": {
+						"object": "BikeTrail"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 603818653544955,
+					"parameters": {
+						"object-to-create": "BikeTrail",
+						"layer": "2",
+						"x": "round(Bike.X / 32) * 32",
+						"y": "round(Bike.Y / 32) * 32",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "BikeTrail",
+					"sid": 146276385776523,
+					"parameters": {
+						"width": "30",
+						"height": "30"
+					}
+				},
+				{
+					"callFunction": "setBikeEmission",
+					"sid": 934360617593143
+				}
+			],
+			"sid": 420902046363191
 		},
 		{
 			"eventType": "block",
@@ -594,20 +654,20 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 210185757571990
+					"sid": 949803623888114
 				}
 			],
 			"actions": [
 				{
 					"id": "set-text",
 					"objectClass": "emissionText",
-					"sid": 948692665498290,
+					"sid": 705930638134592,
 					"parameters": {
 						"text": "\"emissions used: \" & emissionTotal"
 					}
 				}
 			],
-			"sid": 973251307436971
+			"sid": 969009149660907
 		}
 	],
 	"sid": 365148969480927

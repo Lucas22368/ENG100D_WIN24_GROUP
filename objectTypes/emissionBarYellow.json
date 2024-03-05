@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 453982240777220,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "yellowLimit",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 161842679675223
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

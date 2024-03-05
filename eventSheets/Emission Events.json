@@ -42,7 +42,7 @@
 			"sid": 649729467409984
 		},
 		{
-			"functionName": "setEmission",
+			"functionName": "setCarEmission",
 			"functionDescription": "changes emission value",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -63,6 +63,180 @@
 				}
 			],
 			"sid": 805235864340791
+		},
+		{
+			"functionName": "setBikeEmission",
+			"functionDescription": "changes emission value",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 371510626397617,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "bikeEmission"
+					}
+				}
+			],
+			"sid": 638754340580736
+		},
+		{
+			"eventType": "comment",
+			"text": "display bar properties"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarEmpty",
+					"sid": 425756277648171,
+					"parameters": {
+						"instance-variable": "emptyLimit",
+						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "emissionBarEmpty",
+					"sid": 695762544686405
+				}
+			],
+			"sid": 661037809567701,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "emissionBarEmpty",
+							"sid": 219927281154759
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "emissionBarEmpty",
+							"sid": 414617000436242,
+							"parameters": {
+								"object": "emissionBarGreen",
+								"layer": "4",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 745693261603940
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarGreen",
+					"sid": 883400679913821,
+					"parameters": {
+						"instance-variable": "greenLimit",
+						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "emissionBarGreen",
+					"sid": 767104334271017
+				}
+			],
+			"sid": 965651722268994,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "emissionBarGreen",
+							"sid": 873779534929242
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "emissionBarGreen",
+							"sid": 111436507316774,
+							"parameters": {
+								"object": "emissionBarYellow",
+								"layer": "4",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 990816635379118
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarYellow",
+					"sid": 114809925888301,
+					"parameters": {
+						"instance-variable": "yellowLimit",
+						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "emissionBarYellow",
+					"sid": 385368016335627
+				}
+			],
+			"sid": 516165267172574,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "emissionBarYellow",
+							"sid": 786341355701593
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "emissionBarYellow",
+							"sid": 898914804686944,
+							"parameters": {
+								"object": "emissionBarRed",
+								"layer": "4",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 684552924251623
+				}
+			]
 		}
 	],
 	"sid": 500283305365175

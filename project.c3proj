@@ -185,7 +185,9 @@
 		}
 	],
 	"families": {
-		"items": [],
+		"items": [
+			"travelModes"
+		],
 		"subfolders": []
 	},
 	"layouts": {
