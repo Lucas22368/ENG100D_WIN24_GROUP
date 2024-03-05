@@ -1,5 +1,5 @@
 {
-	"name": "Start Page",
+	"name": "Game Start",
 	"layers": [
 		{
 			"name": "Background Screen",
@@ -398,5 +398,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Start Page Events"
+	"eventSheet": "Game Star Events"
 }

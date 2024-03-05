@@ -237,6 +237,29 @@
 					"sid": 684552924251623
 				}
 			]
+		},
+		{
+			"functionName": "subCarEmission",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 378486487277484,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "carEmission"
+					}
+				}
+			],
+			"sid": 143653934649263
 		}
 	],
 	"sid": 500283305365175

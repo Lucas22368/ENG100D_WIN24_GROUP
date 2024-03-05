@@ -23,19 +23,20 @@
 			],
 			"actions": [
 				{
-					"id": "set-x",
-					"objectClass": "car",
-					"sid": 630963676835847,
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 313171469123337,
 					"parameters": {
-						"x": "car.XVal"
+						"layout": "Motion"
 					}
 				},
 				{
-					"id": "set-y",
-					"objectClass": "car",
-					"sid": 607791616270957,
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 294581267425034,
 					"parameters": {
-						"y": "car.YVal"
+						"variable": "emissionTotal",
+						"value": "0"
 					}
 				}
 			],
@@ -540,6 +541,10 @@
 					"id": "destroy",
 					"objectClass": "carTrail",
 					"sid": 823190152004239
+				},
+				{
+					"callFunction": "subCarEmission",
+					"sid": 758553281588848
 				}
 			],
 			"sid": 167436006549731

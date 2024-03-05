@@ -198,7 +198,7 @@
 			"Main",
 			"Motion",
 			"Star Test",
-			"Start Page",
+			"Game Start",
 			"Level1"
 		],
 		"subfolders": []
@@ -213,7 +213,7 @@
 			"Star Event Test",
 			"Star Display Event",
 			"Emission Events",
-			"Start Page Events",
+			"Game Star Events",
 			"Level1 Events"
 		],
 		"subfolders": []
@@ -447,5 +447,5 @@
 	},
 	"viewportWidth": 480,
 	"viewportHeight": 854,
-	"firstLayout": "Landing"
+	"firstLayout": "Game Start"
 }
