@@ -96,108 +96,82 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "emissionBarEmpty",
-					"sid": 425756277648171,
+					"objectClass": "emissionBarDisplay",
+					"sid": 208391592767157,
 					"parameters": {
-						"instance-variable": "emptyLimit",
+						"instance-variable": "barGreenS",
 						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 641731549785490,
+					"parameters": {
+						"instance-variable": "barGreenL",
+						"comparison": 5,
 						"value": "emissionTotal"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "emissionBarEmpty",
-					"sid": 695762544686405
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 934052087817868,
+					"parameters": {
+						"frame-number": "1"
+					}
 				}
 			],
-			"sid": 661037809567701,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "emissionBarEmpty",
-							"sid": 219927281154759
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "emissionBarEmpty",
-							"sid": 414617000436242,
-							"parameters": {
-								"object": "emissionBarGreen",
-								"layer": "4",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 745693261603940
-				}
-			]
+			"sid": 366999350265580
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "emissionBarGreen",
-					"sid": 883400679913821,
+					"objectClass": "emissionBarDisplay",
+					"sid": 575039898995484,
 					"parameters": {
-						"instance-variable": "greenLimit",
+						"instance-variable": "barYellowS",
 						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 418588722556103,
+					"parameters": {
+						"instance-variable": "barYellowL",
+						"comparison": 5,
 						"value": "emissionTotal"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "emissionBarGreen",
-					"sid": 767104334271017
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 545567568516841,
+					"parameters": {
+						"frame-number": "2"
+					}
 				}
 			],
-			"sid": 965651722268994,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "emissionBarGreen",
-							"sid": 873779534929242
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "emissionBarGreen",
-							"sid": 111436507316774,
-							"parameters": {
-								"object": "emissionBarYellow",
-								"layer": "4",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 990816635379118
-				}
-			]
+			"sid": 663255625208468
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "emissionBarYellow",
-					"sid": 114809925888301,
+					"objectClass": "emissionBarDisplay",
+					"sid": 280462878274825,
 					"parameters": {
-						"instance-variable": "yellowLimit",
+						"instance-variable": "barRedS",
 						"comparison": 3,
 						"value": "emissionTotal"
 					}
@@ -205,38 +179,15 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "emissionBarYellow",
-					"sid": 385368016335627
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 908286986251778,
+					"parameters": {
+						"frame-number": "3"
+					}
 				}
 			],
-			"sid": 516165267172574,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "emissionBarYellow",
-							"sid": 786341355701593
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "emissionBarYellow",
-							"sid": 898914804686944,
-							"parameters": {
-								"object": "emissionBarRed",
-								"layer": "4",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 684552924251623
-				}
-			]
+			"sid": 182824315725937
 		},
 		{
 			"functionName": "subCarEmission",
@@ -252,14 +203,14 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 378486487277484,
+					"sid": 167988777367518,
 					"parameters": {
 						"variable": "emissionTotal",
 						"value": "carEmission"
 					}
 				}
 			],
-			"sid": 143653934649263
+			"sid": 670969730862462
 		}
 	],
 	"sid": 500283305365175
