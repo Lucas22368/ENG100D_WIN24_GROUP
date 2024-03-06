@@ -211,7 +211,8 @@
 			"Star Display Event",
 			"Emission Events",
 			"Game Star Events",
-			"Level1 Events"
+			"Level1 Events",
+			"Timer Events"
 		],
 		"subfolders": []
 	},

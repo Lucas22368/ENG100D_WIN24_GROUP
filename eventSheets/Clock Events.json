@@ -6,16 +6,6 @@
 			"text": "Sets and runs a global timer"
 		},
 		{
-			"eventType": "variable",
-			"name": "TravelTime",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 336204474449325
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -48,7 +38,7 @@
 							"objectClass": "System",
 							"sid": 206518694923326,
 							"parameters": {
-								"variable": "TravelTime",
+								"variable": "timer",
 								"value": "1"
 							}
 						},
@@ -58,7 +48,7 @@
 							"sid": 333499439283367,
 							"disabled": true,
 							"parameters": {
-								"text": "str(TravelTime)"
+								"text": "str(Timer)"
 							}
 						},
 						{
