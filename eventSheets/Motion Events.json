@@ -6,6 +6,10 @@
 			"includeSheet": "Emission Events"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Timer Events"
+		},
+		{
 			"eventType": "comment",
 			"text": "Uses the tween behavior to move the vehicle to the TravelPoint"
 		},
@@ -36,6 +40,15 @@
 					"sid": 294581267425034,
 					"parameters": {
 						"variable": "emissionTotal",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 986125456689214,
+					"parameters": {
+						"variable": "timer",
 						"value": "0"
 					}
 				}
