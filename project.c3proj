@@ -184,7 +184,8 @@
 			"Level1Goal",
 			"StartTutorial",
 			"SkipForNow",
-			"theX"
+			"theX",
+			"nextButton2"
 		],
 		"subfolders": []
 	},
