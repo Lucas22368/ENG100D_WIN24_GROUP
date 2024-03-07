@@ -48,7 +48,7 @@
 					"objectClass": "System",
 					"sid": 986125456689214,
 					"parameters": {
-						"variable": "timer",
+						"variable": "timerTotal",
 						"value": "0"
 					}
 				}
@@ -87,26 +87,15 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "car",
+					"sid": 955168066174552,
+					"behaviorType": "DragDrop"
+				}
+			],
 			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "car",
-					"sid": 419624578503208,
-					"parameters": {
-						"instance-variable": "XVal",
-						"value": "car.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "car",
-					"sid": 980570009008964,
-					"parameters": {
-						"instance-variable": "YVal",
-						"value": "car.Y"
-					}
-				},
 				{
 					"callFunction": "makeCarTrail",
 					"sid": 421584764831291
@@ -131,6 +120,10 @@
 							"id": "destroy",
 							"objectClass": "BikeTrail",
 							"sid": 755906896595798
+						},
+						{
+							"callFunction": "backwardBikeMovement",
+							"sid": 461678545988110
 						}
 					],
 					"sid": 324544180820885
@@ -151,12 +144,6 @@
 					"parameters": {
 						"object": "TopBorder"
 					}
-				},
-				{
-					"id": "is-dragging",
-					"objectClass": "car",
-					"sid": 972199748339091,
-					"behaviorType": "DragDrop"
 				}
 			],
 			"actions": [
@@ -164,6 +151,10 @@
 					"id": "destroy",
 					"objectClass": "carTrail",
 					"sid": 857047143292172
+				},
+				{
+					"callFunction": "backwardCarMovement",
+					"sid": 655462862837064
 				}
 			],
 			"sid": 341101733299426
@@ -479,6 +470,10 @@
 							"id": "destroy",
 							"objectClass": "BikeTrail",
 							"sid": 378750923726719
+						},
+						{
+							"callFunction": "backwardBikeMovement",
+							"sid": 128793700240245
 						}
 					],
 					"sid": 932040549606658
@@ -558,6 +553,10 @@
 				{
 					"callFunction": "subCarEmission",
 					"sid": 758553281588848
+				},
+				{
+					"callFunction": "backwardCarMovement",
+					"sid": 900888530430733
 				}
 			],
 			"sid": 167436006549731
@@ -610,8 +609,12 @@
 					}
 				},
 				{
-					"callFunction": "setCarEmission",
+					"callFunction": "addCarEmission",
 					"sid": 744216321802128
+				},
+				{
+					"callFunction": "forwardCarMovement",
+					"sid": 315712358176237
 				}
 			],
 			"sid": 876940245747510
@@ -662,6 +665,10 @@
 				{
 					"callFunction": "setBikeEmission",
 					"sid": 934360617593143
+				},
+				{
+					"callFunction": "forwardBikeMovement",
+					"sid": 948080045996626
 				}
 			],
 			"sid": 420902046363191
@@ -686,6 +693,27 @@
 				}
 			],
 			"sid": 969009149660907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 805079961991964
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TimerText",
+					"sid": 613588297522437,
+					"parameters": {
+						"text": "\"Current Time: \" & floor(timerTotal / 3600) & \"h \" & floor(timerTotal/ 60 % 60) & \"m \" & floor(timerTotal % 60) & \"s\""
+					}
+				}
+			],
+			"sid": 932388691363023
 		}
 	],
 	"sid": 365148969480927

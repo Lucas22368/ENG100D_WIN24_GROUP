@@ -38,7 +38,7 @@
 							"objectClass": "System",
 							"sid": 206518694923326,
 							"parameters": {
-								"variable": "timer",
+								"variable": "timerTotal",
 								"value": "1"
 							}
 						},
@@ -48,7 +48,7 @@
 							"sid": 333499439283367,
 							"disabled": true,
 							"parameters": {
-								"text": "str(Timer)"
+								"text": "str(timerTotal)"
 							}
 						},
 						{

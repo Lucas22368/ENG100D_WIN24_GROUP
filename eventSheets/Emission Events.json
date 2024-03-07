@@ -42,7 +42,7 @@
 			"sid": 649729467409984
 		},
 		{
-			"functionName": "setCarEmission",
+			"functionName": "addCarEmission",
 			"functionDescription": "changes emission value",
 			"functionCategory": "",
 			"functionReturnType": "none",

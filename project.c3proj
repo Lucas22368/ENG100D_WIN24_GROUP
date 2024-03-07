@@ -173,7 +173,11 @@
 			"Sprite5",
 			"tutorialIcon",
 			"nextButton",
-			"playButton"
+			"playButton",
+			"Text3",
+			"TimerText",
+			"LevelBack",
+			"Tilemap2"
 		],
 		"subfolders": []
 	},

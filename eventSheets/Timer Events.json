@@ -7,7 +7,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "timer",
+			"name": "timerTotal",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -19,7 +19,7 @@
 			"eventType": "variable",
 			"name": "carmovement",
 			"type": "number",
-			"initialValue": "2",
+			"initialValue": "120",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -39,7 +39,7 @@
 			"eventType": "variable",
 			"name": "bikemovement",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "300",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -49,7 +49,7 @@
 			"functionName": "forwardCarMovement",
 			"functionDescription": "",
 			"functionCategory": "",
-			"functionReturnType": "number",
+			"functionReturnType": "none",
 			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
@@ -61,7 +61,7 @@
 					"objectClass": "System",
 					"sid": 580730390424193,
 					"parameters": {
-						"variable": "timer",
+						"variable": "timerTotal",
 						"value": "carmovement "
 					}
 				}
@@ -72,7 +72,7 @@
 			"functionName": "forwardBikeMovement",
 			"functionDescription": "",
 			"functionCategory": "",
-			"functionReturnType": "number",
+			"functionReturnType": "none",
 			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
@@ -84,7 +84,7 @@
 					"objectClass": "System",
 					"sid": 868756018277576,
 					"parameters": {
-						"variable": "timer",
+						"variable": "timerTotal",
 						"value": "bikemovement"
 					}
 				}
@@ -95,7 +95,7 @@
 			"functionName": "backwardCarMovement",
 			"functionDescription": "",
 			"functionCategory": "",
-			"functionReturnType": "number",
+			"functionReturnType": "none",
 			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
@@ -107,7 +107,7 @@
 					"objectClass": "System",
 					"sid": 653865767462110,
 					"parameters": {
-						"variable": "timer",
+						"variable": "timerTotal",
 						"value": "carmovement"
 					}
 				}
@@ -118,7 +118,7 @@
 			"functionName": "backwardBikeMovement",
 			"functionDescription": "",
 			"functionCategory": "",
-			"functionReturnType": "number",
+			"functionReturnType": "none",
 			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
@@ -130,50 +130,12 @@
 					"objectClass": "System",
 					"sid": 709298104302458,
 					"parameters": {
-						"variable": "timer",
+						"variable": "timerTotal",
 						"value": "bikemovement"
 					}
 				}
 			],
 			"sid": 404508284740083
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 805079961991964
-				}
-			],
-			"actions": [
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 736577170431133,
-					"parameters": {
-						"variable": "timer",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "emissionText",
-					"sid": 530902313099378,
-					"parameters": {
-						"text": "Timer"
-					}
-				},
-				{
-					"id": "append-text",
-					"objectClass": "Text",
-					"sid": 995999992854564,
-					"parameters": {
-						"text": "newline & floor(timer / 3600) & \"h \" & floor(timer/ 60 % 60) & \"m \" & floor(timer % 60) & \"s\""
-					}
-				}
-			],
-			"sid": 932388691363023
 		}
 	],
 	"sid": 456679797356538
