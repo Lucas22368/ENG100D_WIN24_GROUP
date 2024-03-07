@@ -179,7 +179,12 @@
 			"Sprite6",
 			"Sprite7",
 			"Sprite8",
-			"Sprite9"
+			"Sprite9",
+			"Welcome",
+			"Level1Goal",
+			"StartTutorial",
+			"SkipForNow",
+			"theX"
 		],
 		"subfolders": []
 	},
