@@ -194,6 +194,15 @@
 					"id": "destroy",
 					"objectClass": "playButton",
 					"sid": 943266879662825
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 921370957734119,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 660801688563083
