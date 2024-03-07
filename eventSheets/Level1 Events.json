@@ -1,5 +1,10 @@
 {
 	"name": "Level1 Events",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Level1 Tutorial Events"
+		}
+	],
 	"sid": 462271210908144
 }

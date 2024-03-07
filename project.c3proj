@@ -168,7 +168,12 @@
 			"StartBike",
 			"Start",
 			"Clouds",
-			"GreenTravel"
+			"GreenTravel",
+			"tutorialAnimation",
+			"Sprite5",
+			"tutorialIcon",
+			"nextButton",
+			"playButton"
 		],
 		"subfolders": []
 	},
@@ -212,7 +217,8 @@
 			"Emission Events",
 			"Game Star Events",
 			"Level1 Events",
-			"Timer Events"
+			"Timer Events",
+			"Level1 Tutorial Events"
 		],
 		"subfolders": []
 	},
