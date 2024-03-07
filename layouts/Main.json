@@ -474,7 +474,7 @@
 					}
 				},
 				{
-					"type": "TravelMode",
+					"type": "CarSwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -488,8 +488,8 @@
 					"world": {
 						"x": 133,
 						"y": 720,
-						"width": 55.73899258255075,
-						"height": 55.413033561600166,
+						"width": 500.673056180105,
+						"height": 834.4550936335083,
 						"originX": 0.5614035087719298,
 						"originY": 0.5,
 						"color": [
@@ -503,11 +503,11 @@
 					}
 				},
 				{
-					"type": "TravelMode",
+					"type": "CarSwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 1,
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -517,10 +517,10 @@
 					"world": {
 						"x": 235.72340425531914,
 						"y": 720,
-						"width": 63.960221954033074,
-						"height": 70.08118950437668,
-						"originX": 0.5957446808510638,
-						"originY": 0.5116279069767442,
+						"width": 564.6143731114644,
+						"height": 1993.4205014578256,
+						"originX": 0.5614035087719298,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -532,11 +532,11 @@
 					}
 				},
 				{
-					"type": "TravelMode",
+					"type": "CarSwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 2,
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -546,9 +546,9 @@
 					"world": {
 						"x": 327,
 						"y": 719,
-						"width": 80.73899513391719,
-						"height": 41.76154920719855,
-						"originX": 0.46551724137931033,
+						"width": 725.2344826064141,
+						"height": 628.8797998260487,
+						"originX": 0.5614035087719298,
 						"originY": 0.5,
 						"color": [
 							1,

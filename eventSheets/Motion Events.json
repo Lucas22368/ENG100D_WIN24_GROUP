@@ -359,7 +359,7 @@
 					"objectClass": "Touch",
 					"sid": 482710616080034,
 					"parameters": {
-						"object": "TravelMode"
+						"object": "CarSwitch"
 					}
 				},
 				{

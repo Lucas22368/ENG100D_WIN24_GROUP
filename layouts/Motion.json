@@ -622,7 +622,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TravelMode",
+					"type": "CarSwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -634,10 +634,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 256,
+						"x": 288,
 						"y": 736,
-						"width": 55.73899258255075,
-						"height": 55.413033561600166,
+						"width": 128,
+						"height": 128,
 						"originX": 0.5614035087719298,
 						"originY": 0.5,
 						"color": [
@@ -1007,7 +1007,7 @@
 				{
 					"type": "TimerText",
 					"properties": {
-						"text": "Text",
+						"text": "Current Time:",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,

@@ -132,7 +132,7 @@
 			"Title",
 			"TopTitle",
 			"Cloud2",
-			"TravelMode",
+			"CarSwitch",
 			"TravelHelpBack",
 			"TravelHelpText",
 			"TravelTimeText",
@@ -154,8 +154,6 @@
 			"TopBorder",
 			"RightBorder",
 			"RightCorner",
-			"TravelMode2",
-			"TravelMode3",
 			"Bike",
 			"BikeSwitch",
 			"BikePath",
@@ -177,7 +175,11 @@
 			"Text3",
 			"TimerText",
 			"LevelBack",
-			"Tilemap2"
+			"Tilemap2",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"Sprite9"
 		],
 		"subfolders": []
 	},

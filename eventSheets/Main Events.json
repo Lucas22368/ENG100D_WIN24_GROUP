@@ -33,7 +33,7 @@
 					"objectClass": "Touch",
 					"sid": 504125729733670,
 					"parameters": {
-						"object": "TravelMode"
+						"object": "CarSwitch"
 					}
 				}
 			],
@@ -48,7 +48,7 @@
 							"objectClass": "System",
 							"sid": 120806586826167,
 							"parameters": {
-								"first-value": "TravelMode.AnimationFrame",
+								"first-value": "CarSwitch.AnimationFrame",
 								"comparison": 0,
 								"second-value": "0"
 							}
@@ -78,7 +78,7 @@
 							"objectClass": "System",
 							"sid": 768174449886190,
 							"parameters": {
-								"first-value": "TravelMode.AnimationFrame",
+								"first-value": "CarSwitch.AnimationFrame",
 								"comparison": 0,
 								"second-value": "1"
 							}
@@ -108,7 +108,7 @@
 							"objectClass": "System",
 							"sid": 746211509764549,
 							"parameters": {
-								"first-value": "TravelMode.AnimationFrame",
+								"first-value": "CarSwitch.AnimationFrame",
 								"comparison": 0,
 								"second-value": "2"
 							}
