@@ -152,7 +152,9 @@
 			"TopLeftBorder",
 			"Sprite6",
 			"Sprite8",
-			"SubmitArea"
+			"SubmitArea",
+			"Sprite10",
+			"Lock"
 		],
 		"subfolders": []
 	},

@@ -1,7 +1,7 @@
 {
-	"name": "SubmitArea",
+	"name": "Sprite10",
 	"plugin-id": "Sprite",
-	"sid": 945618596525408,
+	"sid": 833969120241846,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,32 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6197110,
-						"collisionPoly": {
-							"points": [
-								0.0022123893805309734,
-								0.0022123893805309734,
-								0.9977876106194691,
-								0.0022123893805309734,
-								0.9977876106194691,
-								0.9977876106194691,
-								0.0022123893805309734,
-								0.9977876106194691
-							]
-						},
+						"imageSpriteId": 4772666,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 659316132066813,
+				"sid": 811529697694357,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

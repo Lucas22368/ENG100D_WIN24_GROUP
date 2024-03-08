@@ -5,11 +5,19 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 999772225400745,
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 967091024300208,
 					"parameters": {
-						"object": "endIconTemp"
+						"object": "SubmitArea"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 274249096775579,
+					"parameters": {
+						"object": "SubmitArea"
 					}
 				}
 			],
@@ -39,6 +47,15 @@
 					"parameters": {
 						"x": "316",
 						"y": "553"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Lock",
+					"sid": 423153035537890,
+					"parameters": {
+						"x": "205",
+						"y": "548"
 					}
 				}
 			],
@@ -125,7 +142,8 @@
 					],
 					"sid": 659837117476249
 				}
-			]
+			],
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -169,6 +187,41 @@
 					"id": "destroy",
 					"objectClass": "leaf3",
 					"sid": 443062061463168
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 209626468793879,
+					"parameters": {
+						"variable": "ResetCheck",
+						"value": "false"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 119193370430511,
+					"parameters": {
+						"layout": "Level1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 332671637249813,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 186591032500931,
+					"parameters": {
+						"variable": "timerTotal",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 594424120844526

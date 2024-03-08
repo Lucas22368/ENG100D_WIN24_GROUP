@@ -1209,10 +1209,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 235179287451768,
+					"sid": 661371328585299,
 					"parameters": {
 						"object-to-create": "Bike",
-						"layer": "7",
+						"layer": "6",
 						"x": "car.X",
 						"y": "car.Y",
 						"create-hierarchy": false,
@@ -1275,10 +1275,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 861811350645414,
+					"sid": 128022679842008,
 					"parameters": {
 						"object-to-create": "car",
-						"layer": "7",
+						"layer": "6",
 						"x": "Bike.X",
 						"y": "Bike.Y",
 						"create-hierarchy": false,

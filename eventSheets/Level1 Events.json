@@ -56,9 +56,28 @@
 					"parameters": {
 						"layout": "Level1"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 469355441208171,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 379944922317557,
+					"parameters": {
+						"variable": "timerTotal",
+						"value": "0"
+					}
 				}
 			],
-			"sid": 780358478549287
+			"sid": 780358478549287,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -239,12 +258,6 @@
 				}
 			],
 			"sid": 238360012964393
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 635775977438977
 		},
 		{
 			"eventType": "block",
