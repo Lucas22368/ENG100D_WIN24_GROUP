@@ -43,14 +43,23 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 500445945843869,
+					"sid": 276694125024255,
 					"parameters": {
 						"object-to-create": "overlayLevel1",
 						"layer": "7",
-						"x": "283",
-						"y": "316",
+						"x": "0",
+						"y": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "overlayLevel1",
+					"sid": 694482143401291,
+					"parameters": {
+						"width": "480",
+						"height": "854"
 					}
 				},
 				{
@@ -69,12 +78,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 917660567689065,
+					"sid": 945057392738521,
 					"parameters": {
 						"object-to-create": "Cancel",
-						"layer": "0",
-						"x": "230",
-						"y": "388",
+						"layer": "7",
+						"x": "255",
+						"y": "420",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -82,12 +91,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 150945513495292,
+					"sid": 485828784770215,
 					"parameters": {
 						"object-to-create": "resetConfrim",
 						"layer": "7",
-						"x": "210",
-						"y": "388",
+						"x": "120",
+						"y": "420",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -206,14 +215,23 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 497227032961754,
+					"sid": 530613631841751,
 					"parameters": {
 						"object-to-create": "overlayLevel1",
 						"layer": "7",
-						"x": "283",
-						"y": "316",
+						"x": "0",
+						"y": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "overlayLevel1",
+					"sid": 700875140075307,
+					"parameters": {
+						"width": "480",
+						"height": "854"
 					}
 				},
 				{
