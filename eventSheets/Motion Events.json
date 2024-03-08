@@ -297,18 +297,18 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 914287248816999,
+					"sid": 330915337670000,
 					"parameters": {
-						"variable": "prevCarX",
+						"variable": "curPosX",
 						"value": "round((curPosX + 16) / 32) * 32"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 538208652508392,
+					"sid": 240514642430576,
 					"parameters": {
-						"variable": "prevCarY",
+						"variable": "curPosY",
 						"value": "round((curPosY) / 32) * 32"
 					}
 				}
@@ -329,18 +329,18 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 534081535741449,
+					"sid": 958714037351917,
 					"parameters": {
-						"variable": "prevCarX",
-						"value": "round((curPosX - 16) / 32) * 32"
+						"variable": "curPosX",
+						"value": "round((curPosX - 32) / 32) * 32"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 429799401633525,
+					"sid": 662908456722398,
 					"parameters": {
-						"variable": "prevCarY",
+						"variable": "curPosY",
 						"value": "round((curPosY) / 32) * 32"
 					}
 				}
@@ -361,18 +361,18 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 710667424260237,
+					"sid": 863376153973610,
 					"parameters": {
-						"variable": "prevCarX",
+						"variable": "curPosX",
 						"value": "round((curPosX) / 32) * 32"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 401862237588744,
+					"sid": 161620703503391,
 					"parameters": {
-						"variable": "prevCarY",
+						"variable": "curPosY",
 						"value": "round((curPosY + 16 ) / 32) * 32"
 					}
 				}
@@ -393,18 +393,18 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 316767130153526,
+					"sid": 470032771269024,
 					"parameters": {
-						"variable": "prevCarX",
+						"variable": "curPosX",
 						"value": "round((curPosX) / 32) * 32"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 557219545696199,
+					"sid": 497291134051538,
 					"parameters": {
-						"variable": "prevCarY",
+						"variable": "curPosY",
 						"value": "round((curPosY - 16 ) / 32) * 32"
 					}
 				}
@@ -1337,24 +1337,6 @@
 						"x": "prevCarX",
 						"y": "prevCarY"
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 351462876670582,
-					"parameters": {
-						"variable": "curPosX",
-						"value": "car.X"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 759825231126675,
-					"parameters": {
-						"variable": "curPosY",
-						"value": "car.Y"
-					}
 				}
 			],
 			"sid": 778991579919273,
@@ -1414,10 +1396,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 570883363821775,
+					"sid": 278967751839332,
 					"parameters": {
 						"object-to-create": "carTrail",
-						"layer": "6",
+						"layer": "5",
 						"x": "round(car.X / 32) * 32 + 8",
 						"y": "round(car.Y / 32) * 32 + 8",
 						"create-hierarchy": false,
@@ -1476,10 +1458,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 867509064227781,
+					"sid": 440245594468003,
 					"parameters": {
 						"object-to-create": "BikeTrail",
-						"layer": "6",
+						"layer": "5",
 						"x": "round(Bike.X / 32) * 32 + 8",
 						"y": "round(Bike.Y / 32) * 32 + 8",
 						"create-hierarchy": false,
@@ -1489,10 +1471,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "BikeTrail",
-					"sid": 146276385776523,
+					"sid": 435624174382109,
 					"parameters": {
-						"width": "30",
-						"height": "30"
+						"width": "16",
+						"height": "16"
 					}
 				},
 				{

@@ -14,8 +14,51 @@
 			"includeSheet": "Level1 End Screen Events"
 		},
 		{
+			"eventType": "variable",
+			"name": "ResetCheck",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 295326991260535
+		},
+		{
 			"eventType": "comment",
 			"text": "Display Objectives"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 294759079642561,
+					"parameters": {
+						"object": "reset"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 585924201550763,
+					"parameters": {
+						"variable": "ResetCheck",
+						"value": "false"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 797037695459519,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 780358478549287
 		},
 		{
 			"eventType": "block",
@@ -24,16 +67,37 @@
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 318830408103317
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 554007154275229,
+					"parameters": {
+						"variable": "ResetCheck"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 791003245524959,
+					"sid": 497227032961754,
+					"parameters": {
+						"object-to-create": "overlayLevel1",
+						"layer": "7",
+						"x": "283",
+						"y": "316",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 877521377082272,
 					"parameters": {
 						"object-to-create": "Welcome",
-						"layer": "2",
+						"layer": "7",
 						"x": "230",
 						"y": "388",
 						"create-hierarchy": false,
@@ -43,25 +107,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 551869111871542,
+					"sid": 981894435053618,
 					"parameters": {
 						"object-to-create": "nextButton2",
-						"layer": "2",
+						"layer": "7",
 						"x": "349",
 						"y": "511",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 656849121419858,
-					"parameters": {
-						"object-to-create": "overlayLevel1",
-						"layer": "1",
-						"x": "283",
-						"y": "316",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -90,10 +141,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 285242617116677,
+					"sid": 673387928244761,
 					"parameters": {
 						"object-to-create": "Level1Goal",
-						"layer": "1",
+						"layer": "7",
 						"x": "230",
 						"y": "388",
 						"create-hierarchy": false,
@@ -103,10 +154,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 257455667500437,
+					"sid": 343292084949976,
 					"parameters": {
 						"object-to-create": "StartTutorial",
-						"layer": "2",
+						"layer": "7",
 						"x": "238",
 						"y": "482",
 						"create-hierarchy": false,
@@ -116,10 +167,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 461871080881647,
+					"sid": 676757374530010,
 					"parameters": {
 						"object-to-create": "SkipForNow",
-						"layer": "2",
+						"layer": "7",
 						"x": "236",
 						"y": "533",
 						"create-hierarchy": false,
@@ -129,10 +180,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 146213137700617,
+					"sid": 676504428711539,
 					"parameters": {
 						"object-to-create": "theX",
-						"layer": "2",
+						"layer": "7",
 						"x": "371",
 						"y": "258",
 						"create-hierarchy": false,
