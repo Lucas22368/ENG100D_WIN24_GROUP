@@ -149,7 +149,10 @@
 			"endNextLevelButton",
 			"endTryAgainButton",
 			"BottomRightBorder",
-			"TopLeftBorder"
+			"TopLeftBorder",
+			"Sprite6",
+			"Sprite8",
+			"SubmitArea"
 		],
 		"subfolders": []
 	},
