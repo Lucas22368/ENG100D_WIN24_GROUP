@@ -465,10 +465,10 @@
 					"world": {
 						"x": 352,
 						"y": 416,
-						"width": 96,
-						"height": 32,
-						"originX": 0,
-						"originY": 0,
+						"width": 3.072,
+						"height": 2.8444444444444446,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -725,8 +725,6 @@
 					},
 					"uid": 40,
 					"instanceVariables": {
-						"XVal": 160,
-						"YVal": 192,
 						"check": 0,
 						"carEmission": 20
 					},
@@ -741,8 +739,8 @@
 					"world": {
 						"x": 160,
 						"y": 192,
-						"width": 32,
-						"height": 32,
+						"width": 17.964912280701753,
+						"height": 30.11764705882353,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -185,7 +185,10 @@
 			"StartTutorial",
 			"SkipForNow",
 			"theX",
-			"nextButton2"
+			"nextButton2",
+			"LeftBorder",
+			"BottomBorder",
+			"BottomLeft"
 		],
 		"subfolders": []
 	},

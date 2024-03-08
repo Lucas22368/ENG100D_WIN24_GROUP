@@ -1,43 +1,37 @@
 {
-	"name": "Welcome",
+	"name": "LeftBorder",
 	"plugin-id": "Sprite",
-	"sid": 181899957090126,
+	"sid": 373183988231506,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 437554217917440
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 390,
-						"height": 844,
+						"width": 2048,
+						"height": 2048,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3064253,
-						"collisionPoly": {
-							"points": [
-								0.04358974358974359,
-								0,
-								1,
-								0.011848341232227487,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 7040205,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 946009926572406,
-				"name": "Animation 1",
+				"sid": 962583597373183,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
