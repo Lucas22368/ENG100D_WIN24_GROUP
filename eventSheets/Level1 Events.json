@@ -22,12 +22,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 531916203732710,
+					"sid": 791003245524959,
 					"parameters": {
 						"object-to-create": "Welcome",
-						"layer": "1",
-						"x": "252",
-						"y": "430",
+						"layer": "2",
+						"x": "230",
+						"y": "388",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -35,12 +35,25 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 815712803860730,
+					"sid": 551869111871542,
 					"parameters": {
 						"object-to-create": "nextButton2",
 						"layer": "2",
-						"x": "357",
-						"y": "497",
+						"x": "349",
+						"y": "511",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 656849121419858,
+					"parameters": {
+						"object-to-create": "overlay",
+						"layer": "1",
+						"x": "283",
+						"y": "316",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -69,12 +82,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 818808671829746,
+					"sid": 285242617116677,
 					"parameters": {
 						"object-to-create": "Level1Goal",
 						"layer": "1",
-						"x": "252",
-						"y": "430",
+						"x": "230",
+						"y": "388",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -82,12 +95,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 260687053372400,
+					"sid": 257455667500437,
 					"parameters": {
 						"object-to-create": "StartTutorial",
 						"layer": "2",
-						"x": "251",
-						"y": "477",
+						"x": "238",
+						"y": "482",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -95,12 +108,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 617814346439313,
+					"sid": 461871080881647,
 					"parameters": {
 						"object-to-create": "SkipForNow",
 						"layer": "2",
-						"x": "251",
-						"y": "516",
+						"x": "236",
+						"y": "533",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -108,12 +121,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 575987039328089,
+					"sid": 146213137700617,
 					"parameters": {
 						"object-to-create": "theX",
 						"layer": "2",
-						"x": "385",
-						"y": "277",
+						"x": "371",
+						"y": "258",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -158,6 +171,11 @@
 					"id": "destroy",
 					"objectClass": "theX",
 					"sid": 936298633927839
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlay",
+					"sid": 546845010107042
 				}
 			],
 			"sid": 238360012964393
@@ -200,6 +218,11 @@
 					"id": "destroy",
 					"objectClass": "theX",
 					"sid": 920584800088598
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlay",
+					"sid": 349585283823311
 				}
 			],
 			"sid": 845595426173130
@@ -416,6 +439,11 @@
 						"variable": "tutorialFrameIdx",
 						"value": "0"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlay",
+					"sid": 958432044728584
 				}
 			],
 			"sid": 333657753893654

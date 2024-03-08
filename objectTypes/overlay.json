@@ -1,7 +1,7 @@
 {
-	"name": "Welcome",
+	"name": "overlay",
 	"plugin-id": "Sprite",
-	"sid": 181899957090126,
+	"sid": 227566887472476,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,32 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 400,
-						"height": 361,
+						"width": 780,
+						"height": 1688,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2147516,
-						"collisionPoly": {
-							"points": [
-								0.04358974358974359,
-								0,
-								1,
-								0.011848341232227487,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 2050933,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 946009926572406,
+				"sid": 920667403738026,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
