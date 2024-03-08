@@ -31,24 +31,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 422491792623705
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-animation",
-					"objectClass": "emissionBarDisplay",
-					"sid": 892990429315229
-				}
-			],
-			"sid": 724176779566331
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 294759079642561,
@@ -59,9 +41,78 @@
 			],
 			"actions": [
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 500445945843869,
+					"parameters": {
+						"object-to-create": "overlayLevel1",
+						"layer": "7",
+						"x": "283",
+						"y": "316",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 852774284013169,
+					"parameters": {
+						"object-to-create": "ResetPrompt",
+						"layer": "7",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 917660567689065,
+					"parameters": {
+						"object-to-create": "Cancel",
+						"layer": "0",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 150945513495292,
+					"parameters": {
+						"object-to-create": "resetConfrim",
+						"layer": "7",
+						"x": "210",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 780358478549287,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 890069748297758,
+					"parameters": {
+						"object": "resetConfrim"
+					}
+				}
+			],
+			"actions": [
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 585924201550763,
+					"sid": 691625079207656,
 					"parameters": {
 						"variable": "ResetCheck",
 						"value": "false"
@@ -70,7 +121,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 797037695459519,
+					"sid": 684492829108526,
 					"parameters": {
 						"layout": "Level1"
 					}
@@ -78,7 +129,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 469355441208171,
+					"sid": 693828853741435,
 					"parameters": {
 						"variable": "emissionTotal",
 						"value": "0"
@@ -87,19 +138,51 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 379944922317557,
+					"sid": 807277571385659,
 					"parameters": {
 						"variable": "timerTotal",
 						"value": "0"
 					}
-				},
-				{
-					"id": "stop-animation",
-					"objectClass": "emissionBarDisplay",
-					"sid": 819675874620378
 				}
 			],
-			"sid": 780358478549287,
+			"sid": 478844185211593,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 562215850984846,
+					"parameters": {
+						"object": "Cancel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "overlayLevel1",
+					"sid": 853063962264763
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cancel",
+					"sid": 759522561887806
+				},
+				{
+					"id": "destroy",
+					"objectClass": "resetConfrim",
+					"sid": 395033772631517
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ResetPrompt",
+					"sid": 271275370250449
+				}
+			],
+			"sid": 760038144130267,
 			"isOrBlock": true
 		},
 		{

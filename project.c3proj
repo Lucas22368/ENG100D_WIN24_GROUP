@@ -154,7 +154,13 @@
 			"Sprite8",
 			"SubmitArea",
 			"Sprite10",
-			"Lock"
+			"Lock",
+			"Sprite11",
+			"ResetPrompt",
+			"Sprite13",
+			"resetConfrim",
+			"Sprite14",
+			"Cancel"
 		],
 		"subfolders": []
 	},

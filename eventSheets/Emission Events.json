@@ -123,11 +123,6 @@
 					"parameters": {
 						"frame-number": "1"
 					}
-				},
-				{
-					"id": "stop-animation",
-					"objectClass": "emissionBarDisplay",
-					"sid": 733568208395436
 				}
 			],
 			"sid": 366999350265580
@@ -164,11 +159,6 @@
 					"parameters": {
 						"frame-number": "2"
 					}
-				},
-				{
-					"id": "stop-animation",
-					"objectClass": "emissionBarDisplay",
-					"sid": 442614512842639
 				}
 			],
 			"sid": 663255625208468
@@ -195,11 +185,6 @@
 					"parameters": {
 						"frame-number": "3"
 					}
-				},
-				{
-					"id": "stop-animation",
-					"objectClass": "emissionBarDisplay",
-					"sid": 983904291410603
 				}
 			],
 			"sid": 182824315725937

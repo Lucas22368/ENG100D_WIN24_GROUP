@@ -3051,10 +3051,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 303,
-						"y": 65,
-						"width": 114,
-						"height": 20,
+						"x": 303.4874237056851,
+						"y": 65.42285397800651,
+						"width": 88,
+						"height": 16,
 						"originX": 0.5237843551797041,
 						"originY": 0.5,
 						"color": [
@@ -3477,8 +3477,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 547,
-						"y": 70,
+						"x": 622,
+						"y": 43,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -3564,8 +3564,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 707,
-						"y": 1286,
+						"x": 331,
+						"y": 1284,
 						"width": 483,
 						"height": 861,
 						"originX": 0.5,
@@ -3599,6 +3599,64 @@
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ResetPrompt",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 138,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 809,
+						"y": 1156,
+						"width": 306,
+						"height": 225,
+						"originX": 0.4772727272727273,
+						"originY": 0.4620253164556962,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "overlayLevel1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 136,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 631,
+						"y": 1297,
+						"width": 480,
+						"height": 854,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
