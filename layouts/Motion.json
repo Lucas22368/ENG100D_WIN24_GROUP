@@ -737,9 +737,9 @@
 						}
 					},
 					"world": {
-						"x": 161,
-						"y": 193,
-						"width": 30.964912280701753,
+						"x": 160,
+						"y": 192,
+						"width": 17.964912280701753,
 						"height": 30.11764705882353,
 						"originX": 0,
 						"originY": 0,
@@ -754,9 +754,9 @@
 					}
 				},
 				{
-					"type": "motionResetText",
+					"type": "Text2",
 					"properties": {
-						"text": "Test Reset Button",
+						"text": "Reset",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -782,9 +782,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 332,
-						"y": 39,
-						"width": 177,
+						"x": 256,
+						"y": 64,
+						"width": 64,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -953,7 +953,7 @@
 					}
 				},
 				{
-					"type": "motionResetButton",
+					"type": "Reset",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -986,8 +986,8 @@
 						}
 					},
 					"world": {
-						"x": 403,
-						"y": 84,
+						"x": 384,
+						"y": 64,
 						"width": 120,
 						"height": 40,
 						"originX": 0.5495495495495496,
@@ -1005,7 +1005,7 @@
 				{
 					"type": "TimerText",
 					"properties": {
-						"text": "<Time Elapsed>",
+						"text": "Current Time:",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -1031,8 +1031,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 33,
-						"y": 100,
+						"x": 0,
+						"y": 512,
 						"width": 288,
 						"height": 30,
 						"originX": 0,

@@ -164,7 +164,7 @@
 					}
 				},
 				{
-					"type": "StartSand",
+					"type": "Sand",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -228,7 +228,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "StartButton",
+					"type": "Start",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -311,7 +311,7 @@
 					}
 				},
 				{
-					"type": "StartPlanetFlipTitle",
+					"type": "TopTitle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -398,5 +398,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Game Start Events"
+	"eventSheet": "Game Star Events"
 }

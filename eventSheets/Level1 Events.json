@@ -10,14 +10,6 @@
 			"includeSheet": "Motion Events"
 		},
 		{
-			"eventType": "include",
-			"includeSheet": "Level1 End Screen Events"
-		},
-		{
-			"eventType": "comment",
-			"text": "Display Objectives"
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -58,7 +50,7 @@
 					"objectClass": "System",
 					"sid": 656849121419858,
 					"parameters": {
-						"object-to-create": "overlayLevel1",
+						"object-to-create": "overlay",
 						"layer": "1",
 						"x": "283",
 						"y": "316",
@@ -182,7 +174,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "overlayLevel1",
+					"objectClass": "overlay",
 					"sid": 546845010107042
 				}
 			],
@@ -229,25 +221,11 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "overlayLevel1",
+					"objectClass": "overlay",
 					"sid": 349585283823311
 				}
 			],
 			"sid": 845595426173130
-		},
-		{
-			"eventType": "comment",
-			"text": "Display Tutorial Frames"
-		},
-		{
-			"eventType": "variable",
-			"name": "tutorialFrameIdx",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 137348980047809
 		},
 		{
 			"eventType": "block",
@@ -265,12 +243,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 535597197916590,
+					"sid": 622451139864233,
 					"parameters": {
 						"object-to-create": "tutorialAnimation",
-						"layer": "7",
-						"x": "240.5",
-						"y": "427.5",
+						"layer": "1",
+						"x": "245",
+						"y": "427",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -278,12 +256,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 359980200435226,
+					"sid": 558682782092890,
 					"parameters": {
 						"object-to-create": "nextButton",
-						"layer": "7",
-						"x": "397",
-						"y": "276",
+						"layer": "1",
+						"x": "378",
+						"y": "263",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -367,11 +345,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 254568969614160,
+							"sid": 714844347713318,
 							"parameters": {
 								"first-value": "tutorialFrameIdx",
 								"comparison": 5,
-								"second-value": "5"
+								"second-value": "4"
 							}
 						}
 					],
@@ -392,12 +370,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 445374341693202,
+							"sid": 305419803443228,
 							"parameters": {
 								"object-to-create": "playButton",
-								"layer": "7",
-								"x": "370",
-								"y": "720",
+								"layer": "1",
+								"x": "412",
+								"y": "796",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -464,7 +442,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "overlayLevel1",
+					"objectClass": "overlay",
 					"sid": 958432044728584
 				}
 			],
