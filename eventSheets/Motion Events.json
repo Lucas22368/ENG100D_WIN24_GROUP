@@ -297,10 +297,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 330915337670000,
+					"sid": 862547844732195,
 					"parameters": {
 						"variable": "curPosX",
-						"value": "round((curPosX + 16) / 32) * 32"
+						"value": "round((curPosX + 12) / 32) * 32"
 					}
 				},
 				{
@@ -329,10 +329,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 363714759607048,
+					"sid": 975381722830137,
 					"parameters": {
 						"variable": "curPosX",
-						"value": "round((curPosX - 16) / 32) * 32"
+						"value": "round((curPosX - 12) / 32) * 32"
 					}
 				},
 				{
@@ -370,10 +370,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 161620703503391,
+					"sid": 477193466906068,
 					"parameters": {
 						"variable": "curPosY",
-						"value": "round((curPosY + 16 ) / 32) * 32"
+						"value": "round((curPosY + 12 ) / 32) * 32"
 					}
 				}
 			],
@@ -402,10 +402,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 497291134051538,
+					"sid": 817371454053681,
 					"parameters": {
 						"variable": "curPosY",
-						"value": "round((curPosY - 16 ) / 32) * 32"
+						"value": "round((curPosY - 12 ) / 32) * 32"
 					}
 				}
 			],
