@@ -8,27 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "PlatformInfo",
-			"name": "Platform info",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -52,13 +31,6 @@
 			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Anchor",
-			"name": "Anchor",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -115,6 +87,7 @@
 	"uniqueId": "lmv6wb3s6kp",
 	"objectTypes": {
 		"items": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		"Touch",
@@ -190,42 +163,34 @@
 			"TopIcon",
 			"TopTop",
 			"TopBottom",
+=======
+>>>>>>> parent of 44541d5 (Some logic and border updates)
 			"Touch",
-			"Browser",
-			"PlatformInfo",
-			"LoginPanel",
-			"LandingGo2",
-			"Trees",
-			"Intro",
-			"Title",
-			"TopTitle",
-			"Cloud2",
+			"StartPlanetFlipTitle",
 			"CarSwitch",
-			"TravelHelpBack",
-			"TravelHelpText",
-			"TravelTimeText",
 			"car",
-			"TravelPoint",
-			"GoButton",
 			"sprite",
 			"Sprite2",
 			"Sprite3",
-			"LandingGo3",
 			"Sprite4",
-			"Reset",
+			"motionResetButton",
 			"Reset2",
 			"ResetText",
-			"Text",
+			"StarText",
 			"Tilemap",
 			"carTrail",
-			"Text2",
+			"motionResetText",
 			"TopBorder",
 			"RightBorder",
+<<<<<<< HEAD
 <<<<<<< HEAD
 			"RightCorner",
 =======
 			"TopRightBorder",
 >>>>>>> parent of 07c4b78 (Attempting Revvert)
+=======
+			"RightCorner",
+>>>>>>> parent of 44541d5 (Some logic and border updates)
 			"Bike",
 			"BikeSwitch",
 			"BikePath",
@@ -234,20 +199,19 @@
 			"emissionText",
 			"StartBackground",
 			"PixelPalm",
-			"Sand",
+			"StartSand",
 			"StartBike",
-			"Start",
+			"StartButton",
 			"Clouds",
 			"GreenTravel",
 			"tutorialAnimation",
 			"Sprite5",
-			"tutorialIcon",
+			"tutorialButtonTemp",
 			"nextButton",
 			"playButton",
-			"Text3",
 			"TimerText",
 			"LevelBack",
-			"Sprite6",
+			"objectiveButton",
 			"Sprite7",
 			"Sprite8",
 			"Sprite9",
@@ -260,6 +224,7 @@
 			"nextButton2",
 			"LeftBorder",
 			"BottomBorder",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -286,51 +251,47 @@
 >>>>>>> parent of 9ea1e30 (Trying to fix)
 =======
 >>>>>>> parent of 0e31c68 (Reversion)
+=======
+			"BottomLeft",
+			"overlayLevel1",
+			"endIconTemp",
+			"endScreen",
+			"leaf1",
+			"leaf2",
+			"leaf3",
+			"emissionText2",
+			"endNextLevelButton",
+			"endTryAgainButton"
+>>>>>>> parent of 44541d5 (Some logic and border updates)
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
-	"containers": [
-		{
-			"members": [
-				"TravelHelpBack",
-				"TravelHelpText"
-			]
-		}
-	],
+	"containers": [],
 	"families": {
-		"items": [
-			"travelModes"
-		],
+		"items": [],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Clock",
-			"Help",
-			"Landing",
-			"Main",
-			"Motion",
-			"Star Test",
 			"Game Start",
-			"Level1"
+			"Level1",
+			"Motion",
+			"Star Test"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Main Events",
-			"Landing Events",
-			"Help Events",
-			"Clock Events",
 			"Motion Events",
 			"Star Event Test",
 			"Star Display Event",
-			"Emission Events",
-			"Game Star Events",
+			"Game Start Events",
 			"Level1 Events",
 			"Timer Events",
-			"Level1 Tutorial Events"
+			"Level1 Tutorial Events",
+			"Level1 End Screen Events",
+			"Emission Events"
 		],
 		"subfolders": []
 	},

@@ -2,14 +2,8 @@
 	"name": "Level1 Tutorial Events",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "tutorialFrameIdx",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 973596539080561
+			"eventType": "comment",
+			"text": "Must be included in Level 1 Events for tutorial to work"
 		},
 		{
 			"eventType": "block",
@@ -19,7 +13,7 @@
 					"objectClass": "Touch",
 					"sid": 554578735825149,
 					"parameters": {
-						"object": "tutorialIcon"
+						"object": "tutorialButtonTemp"
 					}
 				}
 			],
@@ -27,10 +21,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 494283263194678,
+					"sid": 389711935269982,
 					"parameters": {
 						"object-to-create": "tutorialAnimation",
 						"layer": "7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 					"sid": 652557506561394,
 					"parameters": {
@@ -44,6 +39,10 @@
 						"x": "245",
 >>>>>>> parent of 07c4b78 (Attempting Revvert)
 						"y": "427",
+=======
+						"x": "240.5",
+						"y": "427.5",
+>>>>>>> parent of 44541d5 (Some logic and border updates)
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -51,10 +50,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 793462516119792,
+					"sid": 562215515349090,
 					"parameters": {
 						"object-to-create": "nextButton",
 						"layer": "7",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -69,6 +69,10 @@
 >>>>>>> parent of 0e31c68 (Reversion)
 						"x": "378",
 						"y": "263",
+=======
+						"x": "397",
+						"y": "276",
+>>>>>>> parent of 44541d5 (Some logic and border updates)
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -99,9 +103,9 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 652679530788623,
+					"sid": 115142853304747,
 					"parameters": {
-						"object": "nextButton"
+						"object": "motionResetText"
 					}
 				}
 			],
@@ -132,11 +136,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 355340775437731,
+							"sid": 251886446609969,
 							"parameters": {
 								"first-value": "tutorialFrameIdx",
 								"comparison": 5,
-								"second-value": "4"
+								"second-value": "40000"
 							}
 						}
 					],
@@ -157,12 +161,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 205414286298914,
+							"sid": 367406395516952,
 							"parameters": {
 								"object-to-create": "playButton",
-								"layer": "1",
-								"x": "377",
-								"y": "749",
+								"layer": "7",
+								"x": "409",
+								"y": "781",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -201,9 +205,9 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 101800945065973,
+					"sid": 226180730685689,
 					"parameters": {
-						"object": "playButton"
+						"object": "motionResetText"
 					}
 				}
 			],

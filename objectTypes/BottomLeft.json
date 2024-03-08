@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD:objectTypes/overlay.json
 <<<<<<< HEAD
 	"name": "overlay",
 	"plugin-id": "Sprite",
@@ -12,15 +13,27 @@
 	"plugin-id": "Sprite",
 	"sid": 430960214140414,
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+=======
+	"name": "BottomLeft",
+	"plugin-id": "Sprite",
+	"sid": 262208974104949,
+>>>>>>> parent of 44541d5 (Some logic and border updates):objectTypes/BottomLeft.json
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 518615419592570
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
+<<<<<<< HEAD:objectTypes/overlay.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -49,11 +62,16 @@
 						"width": 480,
 						"height": 854,
 >>>>>>> parent of 0e31c68 (Reversion)
+=======
+						"width": 2048,
+						"height": 2048,
+>>>>>>> parent of 44541d5 (Some logic and border updates):objectTypes/BottomLeft.json
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< HEAD:objectTypes/overlay.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,12 +95,25 @@
 =======
 						"imageSpriteId": 7061206,
 >>>>>>> parent of 0e31c68 (Reversion)
+=======
+						"imageSpriteId": 3510511,
+>>>>>>> parent of 44541d5 (Some logic and border updates):objectTypes/BottomLeft.json
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
+<<<<<<< HEAD:objectTypes/overlay.json
 				"sid": 920667403738026,
+=======
+				"sid": 639875552496496,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+>>>>>>> parent of 44541d5 (Some logic and border updates):objectTypes/BottomLeft.json
 			}
 		],
 		"subfolders": []

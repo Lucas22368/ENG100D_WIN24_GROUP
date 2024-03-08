@@ -91,7 +91,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -127,7 +127,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -199,7 +199,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -271,7 +271,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -307,7 +307,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -379,7 +379,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -515,7 +515,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -551,7 +551,7 @@
 					}
 				},
 				{
-					"type": "TopRightBorder",
+					"type": "RightCorner",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -737,9 +737,9 @@
 						}
 					},
 					"world": {
-						"x": 160,
-						"y": 192,
-						"width": 17.964912280701753,
+						"x": 161,
+						"y": 193,
+						"width": 30.964912280701753,
 						"height": 30.11764705882353,
 						"originX": 0,
 						"originY": 0,
@@ -754,9 +754,9 @@
 					}
 				},
 				{
-					"type": "Text2",
+					"type": "motionResetText",
 					"properties": {
-						"text": "Reset",
+						"text": "Test Reset Button",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -782,9 +782,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 256,
-						"y": 64,
-						"width": 64,
+						"x": 332,
+						"y": 39,
+						"width": 177,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -953,7 +953,7 @@
 					}
 				},
 				{
-					"type": "Reset",
+					"type": "motionResetButton",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -986,8 +986,8 @@
 						}
 					},
 					"world": {
-						"x": 384,
-						"y": 64,
+						"x": 403,
+						"y": 84,
 						"width": 120,
 						"height": 40,
 						"originX": 0.5495495495495496,
@@ -1005,7 +1005,7 @@
 				{
 					"type": "TimerText",
 					"properties": {
-						"text": "Current Time:",
+						"text": "<Time Elapsed>",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -1031,8 +1031,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 512,
+						"x": 33,
+						"y": 100,
 						"width": 288,
 						"height": 30,
 						"originX": 0,

@@ -10,6 +10,14 @@
 			"includeSheet": "Motion Events"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "Level1 End Screen Events"
+		},
+		{
+			"eventType": "comment",
+			"text": "Display Objectives"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -22,10 +30,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 632243319029881,
+					"sid": 791003245524959,
 					"parameters": {
 						"object-to-create": "Welcome",
-						"layer": "7",
+						"layer": "2",
 						"x": "230",
 						"y": "388",
 						"create-hierarchy": false,
@@ -35,10 +43,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 187257259151936,
+					"sid": 551869111871542,
 					"parameters": {
 						"object-to-create": "nextButton2",
-						"layer": "7",
+						"layer": "2",
 						"x": "349",
 						"y": "511",
 						"create-hierarchy": false,
@@ -48,22 +56,14 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 976732528565530,
+					"sid": 656849121419858,
 					"parameters": {
-						"object-to-create": "overlay",
+						"object-to-create": "overlayLevel1",
 						"layer": "1",
-						"x": "240",
-						"y": "427",
+						"x": "283",
+						"y": "316",
 						"create-hierarchy": false,
 						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "move-to-layer",
-					"objectClass": "car",
-					"sid": 176052245657289,
-					"parameters": {
-						"layer": "0"
 					}
 				}
 			],
@@ -90,10 +90,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 794453308469859,
+					"sid": 285242617116677,
 					"parameters": {
 						"object-to-create": "Level1Goal",
-						"layer": "7",
+						"layer": "1",
 						"x": "230",
 						"y": "388",
 						"create-hierarchy": false,
@@ -103,10 +103,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 409624187184601,
+					"sid": 257455667500437,
 					"parameters": {
 						"object-to-create": "StartTutorial",
-						"layer": "7",
+						"layer": "2",
 						"x": "238",
 						"y": "482",
 						"create-hierarchy": false,
@@ -116,10 +116,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 191815819011110,
+					"sid": 461871080881647,
 					"parameters": {
 						"object-to-create": "SkipForNow",
-						"layer": "7",
+						"layer": "2",
 						"x": "236",
 						"y": "533",
 						"create-hierarchy": false,
@@ -129,10 +129,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 560201947037169,
+					"sid": 146213137700617,
 					"parameters": {
 						"object-to-create": "theX",
-						"layer": "7",
+						"layer": "2",
 						"x": "371",
 						"y": "258",
 						"create-hierarchy": false,
@@ -182,16 +182,8 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "overlay",
+					"objectClass": "overlayLevel1",
 					"sid": 546845010107042
-				},
-				{
-					"id": "move-to-layer",
-					"objectClass": "car",
-					"sid": 876942467505245,
-					"parameters": {
-						"layer": "8"
-					}
 				}
 			],
 			"sid": 238360012964393
@@ -237,11 +229,25 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "overlay",
+					"objectClass": "overlayLevel1",
 					"sid": 349585283823311
 				}
 			],
 			"sid": 845595426173130
+		},
+		{
+			"eventType": "comment",
+			"text": "Display Tutorial Frames"
+		},
+		{
+			"eventType": "variable",
+			"name": "tutorialFrameIdx",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 137348980047809
 		},
 		{
 			"eventType": "block",
@@ -259,12 +265,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 622451139864233,
+					"sid": 535597197916590,
 					"parameters": {
 						"object-to-create": "tutorialAnimation",
-						"layer": "1",
-						"x": "245",
-						"y": "427",
+						"layer": "7",
+						"x": "240.5",
+						"y": "427.5",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -272,12 +278,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 558682782092890,
+					"sid": 359980200435226,
 					"parameters": {
 						"object-to-create": "nextButton",
-						"layer": "1",
-						"x": "378",
-						"y": "263",
+						"layer": "7",
+						"x": "397",
+						"y": "276",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -318,11 +324,6 @@
 					"id": "destroy",
 					"objectClass": "Level1Goal",
 					"sid": 202750492896290
-				},
-				{
-					"id": "destroy",
-					"objectClass": "overlay",
-					"sid": 701757114550207
 				}
 			],
 			"sid": 983459295477058
@@ -366,11 +367,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 714844347713318,
+							"sid": 254568969614160,
 							"parameters": {
 								"first-value": "tutorialFrameIdx",
 								"comparison": 5,
-								"second-value": "4"
+								"second-value": "5"
 							}
 						}
 					],
@@ -391,12 +392,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 305419803443228,
+							"sid": 445374341693202,
 							"parameters": {
 								"object-to-create": "playButton",
-								"layer": "1",
-								"x": "412",
-								"y": "796",
+								"layer": "7",
+								"x": "370",
+								"y": "720",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -460,93 +461,14 @@
 						"variable": "tutorialFrameIdx",
 						"value": "0"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlayLevel1",
+					"sid": 958432044728584
 				}
 			],
 			"sid": 333657753893654
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 939835375379492
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 937554668153542,
-					"parameters": {
-						"object": "Sprite6"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Welcome",
-					"sid": 703827467601763
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 520139832480865,
-					"parameters": {
-						"object-to-create": "Level1Goal",
-						"layer": "2",
-						"x": "230",
-						"y": "388",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 121196802321754,
-					"parameters": {
-						"object-to-create": "StartTutorial",
-						"layer": "2",
-						"x": "238",
-						"y": "482",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 867798997071210,
-					"parameters": {
-						"object-to-create": "theX",
-						"layer": "2",
-						"x": "371",
-						"y": "258",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "nextButton2",
-					"sid": 340269415347092
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 875278027317559,
-					"parameters": {
-						"object-to-create": "overlay",
-						"layer": "1",
-						"x": "283",
-						"y": "316",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				}
-			],
-			"sid": 934819499868430
 		}
 	],
 	"sid": 462271210908144

@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD:objectTypes/TopRightBorder.json
 <<<<<<<< HEAD:objectTypes/TopRightBorder.json
 	"name": "TopRightBorder",
+=======
+	"name": "RightCorner",
+>>>>>>> parent of 44541d5 (Some logic and border updates):objectTypes/RightCorner.json
 	"plugin-id": "Sprite",
 	"sid": 729487741084328,
 ========
