@@ -1,0 +1,87 @@
+{
+	"name": "Game Start Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 930512361212798
+				}
+			],
+			"actions": [],
+			"sid": 122018349021757,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 458483447314991
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 174723669252158,
+					"parameters": {
+						"object": "StartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "StartButton",
+					"sid": 843580312861274,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "StartBike",
+					"sid": 234234254759916,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"MoveTo\"",
+						"property": "position",
+						"end-x": "600",
+						"end-y": "StartBike.Y",
+						"time": "1.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 566707273517600,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 530840496380010,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 762368330598548
+		}
+	],
+	"sid": 857393558069957
+}

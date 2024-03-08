@@ -460,14 +460,6 @@
 						"variable": "tutorialFrameIdx",
 						"value": "0"
 					}
-<<<<<<< HEAD
-=======
-				},
-				{
-					"id": "destroy",
-					"objectClass": "overlay",
-					"sid": 958432044728584
->>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 				}
 			],
 			"sid": 333657753893654

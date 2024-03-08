@@ -262,16 +262,20 @@
 			"BottomBorder",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"BottomLeft",
 			"overlay"
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 =======
 =======
 >>>>>>> parent of 9ea1e30 (Trying to fix)
+=======
+>>>>>>> parent of 0e31c68 (Reversion)
 			"BottomLeftBorder",
 			"overlay",
 			"BottomRightBorder",
 			"TopLeftBorder"
+<<<<<<< HEAD
 =======
 			"BottomLeft",
 			"overlay"
@@ -280,6 +284,8 @@
 =======
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 >>>>>>> parent of 9ea1e30 (Trying to fix)
+=======
+>>>>>>> parent of 0e31c68 (Reversion)
 		],
 		"subfolders": []
 	},

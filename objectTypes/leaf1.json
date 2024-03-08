@@ -1,9 +1,17 @@
 {
-	"name": "Welcome",
+	"name": "leaf1",
 	"plugin-id": "Sprite",
-	"sid": 181899957090126,
+	"sid": 441171224023505,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "leaf1Achieved",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 789999101945769
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -11,32 +19,20 @@
 			{
 				"frames": [
 					{
-						"width": 400,
-						"height": 361,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 45,
+						"height": 54,
+						"originX": 0.4444444444444444,
+						"originY": 2.1481481481481484,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3064253,
-						"collisionPoly": {
-							"points": [
-								0.04358974358974359,
-								0,
-								1,
-								0.011848341232227487,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 2172911,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 946009926572406,
+				"sid": 700675115733813,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

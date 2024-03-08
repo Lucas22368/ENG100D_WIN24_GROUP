@@ -23,6 +23,7 @@
 					{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						"width": 480,
 						"height": 854,
 =======
@@ -44,6 +45,10 @@
 >>>>>>> parent of 4bf8137 (Attempting Revert)
 =======
 >>>>>>> parent of 07c4b78 (Attempting Revvert)
+=======
+						"width": 480,
+						"height": 854,
+>>>>>>> parent of 0e31c68 (Reversion)
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
@@ -51,6 +56,7 @@
 						"exportQuality": 0.8,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						"imageSpriteId": 7061206,
 =======
 <<<<<<< HEAD
@@ -68,6 +74,9 @@
 >>>>>>> parent of 4bf8137 (Attempting Revert)
 =======
 >>>>>>> parent of 07c4b78 (Attempting Revvert)
+=======
+						"imageSpriteId": 7061206,
+>>>>>>> parent of 0e31c68 (Reversion)
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
