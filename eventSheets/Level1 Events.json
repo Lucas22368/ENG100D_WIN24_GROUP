@@ -31,6 +31,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 113548623229657
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 571842390336580,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "emissionBarDisplay",
+					"sid": 379032826427627
+				}
+			],
+			"sid": 791223646355806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 294759079642561,
@@ -152,6 +178,19 @@
 						"variable": "timerTotal",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 297380850120088,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "emissionBarDisplay",
+					"sid": 771471064211580
 				}
 			],
 			"sid": 478844185211593,
