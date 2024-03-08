@@ -116,6 +116,7 @@
 	"objectTypes": {
 		"items": [
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"Touch",
 		"StartPlanetFlipTitle",
 		"CarSwitch",
@@ -180,6 +181,8 @@
 		"endNextLevelButton",
 		"endTryAgainButton"
 =======
+=======
+>>>>>>> parent of 07c4b78 (Attempting Revvert)
 			"Background",
 			"Hamburger",
 			"AquaBar",
@@ -218,7 +221,11 @@
 			"Text2",
 			"TopBorder",
 			"RightBorder",
+<<<<<<< HEAD
 			"RightCorner",
+=======
+			"TopRightBorder",
+>>>>>>> parent of 07c4b78 (Attempting Revvert)
 			"Bike",
 			"BikeSwitch",
 			"BikePath",
@@ -253,9 +260,18 @@
 			"nextButton2",
 			"LeftBorder",
 			"BottomBorder",
+<<<<<<< HEAD
 			"BottomLeft",
 			"overlay"
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+=======
+			"BottomLeftBorder",
+			"overlay",
+			"BottomRightBorder",
+			"TopLeftBorder",
+			"BottomLeft",
+			"overlay"
+>>>>>>> parent of 07c4b78 (Attempting Revvert)
 		],
 		"subfolders": []
 	},

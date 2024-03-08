@@ -1019,13 +1019,8 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 						"x": 386.1579224142215,
 						"y": 478.08235999946845,
-=======
-						"x": 416,
-						"y": 512,
->>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -1070,10 +1065,13 @@
 			"zElevation": 0,
 			"global": false
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> parent of 4bf8137 (Attempting Revert)
+=======
+>>>>>>> parent of 07c4b78 (Attempting Revvert)
 		},
 		{
 			"name": "Tutorial Layer",
@@ -2870,9 +2868,12 @@
 =======
 =======
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 >>>>>>> parent of 4bf8137 (Attempting Revert)
+=======
+>>>>>>> parent of 07c4b78 (Attempting Revvert)
 		}
 	],
 	"sid": 972532795146195,
