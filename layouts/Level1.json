@@ -3051,10 +3051,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 303.4874237056851,
-						"y": 65.42285397800651,
-						"width": 88,
-						"height": 16,
+						"x": 303,
+						"y": 65,
+						"width": 114,
+						"height": 20,
 						"originX": 0.5237843551797041,
 						"originY": 0.5,
 						"color": [
@@ -3477,8 +3477,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 622,
-						"y": 43,
+						"x": 547,
+						"y": 70,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -3564,8 +3564,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 704,
-						"y": 1312,
+						"x": 707,
+						"y": 1286,
 						"width": 483,
 						"height": 861,
 						"originX": 0.5,
