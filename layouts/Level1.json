@@ -1064,7 +1064,6 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
-<<<<<<< HEAD
 		},
 		{
 			"name": "Tutorial Layer",
@@ -2857,8 +2856,6 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
-=======
->>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 		}
 	],
 	"sid": 972532795146195,
