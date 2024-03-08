@@ -196,7 +196,8 @@
 					"sid": 231821525254976
 				}
 			],
-			"sid": 442067059137149
+			"sid": 442067059137149,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -285,6 +286,62 @@
 				}
 			],
 			"sid": 845595426173130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 216101597518525,
+					"parameters": {
+						"object": "objectiveButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 432385564412759,
+					"parameters": {
+						"object-to-create": "Level1Goal",
+						"layer": "7",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 949523778621520,
+					"parameters": {
+						"object-to-create": "StartTutorial",
+						"layer": "7",
+						"x": "238",
+						"y": "482",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 446032564889110,
+					"parameters": {
+						"object-to-create": "theX",
+						"layer": "7",
+						"x": "371",
+						"y": "258",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 575312467009638,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "comment",
