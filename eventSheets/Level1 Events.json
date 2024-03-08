@@ -22,10 +22,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 791003245524959,
+					"sid": 632243319029881,
 					"parameters": {
 						"object-to-create": "Welcome",
-						"layer": "2",
+						"layer": "7",
 						"x": "230",
 						"y": "388",
 						"create-hierarchy": false,
@@ -35,10 +35,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 551869111871542,
+					"sid": 187257259151936,
 					"parameters": {
 						"object-to-create": "nextButton2",
-						"layer": "2",
+						"layer": "7",
 						"x": "349",
 						"y": "511",
 						"create-hierarchy": false,
@@ -48,12 +48,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 656849121419858,
+					"sid": 976732528565530,
 					"parameters": {
 						"object-to-create": "overlay",
 						"layer": "1",
-						"x": "283",
-						"y": "316",
+						"x": "240",
+						"y": "427",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -82,10 +82,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 285242617116677,
+					"sid": 794453308469859,
 					"parameters": {
 						"object-to-create": "Level1Goal",
-						"layer": "1",
+						"layer": "7",
 						"x": "230",
 						"y": "388",
 						"create-hierarchy": false,
@@ -95,10 +95,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 257455667500437,
+					"sid": 409624187184601,
 					"parameters": {
 						"object-to-create": "StartTutorial",
-						"layer": "2",
+						"layer": "7",
 						"x": "238",
 						"y": "482",
 						"create-hierarchy": false,
@@ -108,10 +108,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 461871080881647,
+					"sid": 191815819011110,
 					"parameters": {
 						"object-to-create": "SkipForNow",
-						"layer": "2",
+						"layer": "7",
 						"x": "236",
 						"y": "533",
 						"create-hierarchy": false,
@@ -121,10 +121,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 146213137700617,
+					"sid": 560201947037169,
 					"parameters": {
 						"object-to-create": "theX",
-						"layer": "2",
+						"layer": "7",
 						"x": "371",
 						"y": "258",
 						"create-hierarchy": false,

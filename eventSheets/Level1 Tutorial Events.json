@@ -27,10 +27,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 652557506561394,
+					"sid": 494283263194678,
 					"parameters": {
 						"object-to-create": "tutorialAnimation",
-						"layer": "1",
+						"layer": "7",
 						"x": "245",
 						"y": "427",
 						"create-hierarchy": false,
@@ -40,10 +40,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 517760926184174,
+					"sid": 793462516119792,
 					"parameters": {
 						"object-to-create": "nextButton",
-						"layer": "1",
+						"layer": "7",
 						"x": "378",
 						"y": "263",
 						"create-hierarchy": false,

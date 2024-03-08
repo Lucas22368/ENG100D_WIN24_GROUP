@@ -530,10 +530,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 235179287451768,
+					"sid": 660018299872868,
 					"parameters": {
 						"object-to-create": "Bike",
-						"layer": "7",
+						"layer": "6",
 						"x": "car.X",
 						"y": "car.Y",
 						"create-hierarchy": false,
@@ -596,10 +596,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 861811350645414,
+					"sid": 631787926778106,
 					"parameters": {
 						"object-to-create": "car",
-						"layer": "7",
+						"layer": "6",
 						"x": "Bike.X",
 						"y": "Bike.Y",
 						"create-hierarchy": false,
@@ -725,10 +725,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 218421975834909,
+					"sid": 201799007057751,
 					"parameters": {
 						"object-to-create": "carTrail",
-						"layer": "6",
+						"layer": "5",
 						"x": "round(car.X / 32) * 32",
 						"y": "round(car.Y / 32) * 32",
 						"create-hierarchy": false,
@@ -779,10 +779,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 874324457767155,
+					"sid": 656843623869822,
 					"parameters": {
 						"object-to-create": "BikeTrail",
-						"layer": "6",
+						"layer": "5",
 						"x": "round(Bike.X / 32) * 32",
 						"y": "round(Bike.Y / 32) * 32",
 						"create-hierarchy": false,
