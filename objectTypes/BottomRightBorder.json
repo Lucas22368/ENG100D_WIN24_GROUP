@@ -1,14 +1,14 @@
 {
-	"name": "RightCorner",
+	"name": "BottomRightBorder",
 	"plugin-id": "Sprite",
-	"sid": 729487741084328,
+	"sid": 710404231581506,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 574240946012982
+			"sid": 324988261994267
 		}
 	],
 	"effectTypes": [],
@@ -24,13 +24,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1750425,
+						"imageSpriteId": 8100576,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 633992209789493,
+				"sid": 248997389599470,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

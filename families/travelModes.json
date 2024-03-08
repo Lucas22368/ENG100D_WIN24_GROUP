@@ -1,0 +1,12 @@
+{
+	"name": "travelModes",
+	"plugin-id": "Sprite",
+	"sid": 883860127810363,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"car",
+		"Bike"
+	]
+}

@@ -1,37 +1,31 @@
 {
-	"name": "LeftBorder",
+	"name": "Sand",
 	"plugin-id": "Sprite",
-	"sid": 373183988231506,
+	"sid": 378394748791520,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 437554217917440
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 5,
-						"height": 21,
+						"width": 390,
+						"height": 28,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6064037,
+						"imageSpriteId": 8559761,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 962583597373183,
-				"name": "Default",
+				"sid": 595484407841824,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

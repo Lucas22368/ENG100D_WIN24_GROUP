@@ -1,0 +1,126 @@
+{
+	"name": "Help Events",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Provides help when the ? icon is touched"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 977120545293964,
+					"parameters": {
+						"object": "TopIcon"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 899930771538523,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 663625186886525,
+							"parameters": {
+								"first-value": "TopIcon.name",
+								"comparison": 0,
+								"second-value": "\"help\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "TopIcon",
+							"sid": 881587784308754,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "0.5"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 667842629082019,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"callFunction": "TravelHelpInit",
+							"sid": 526873015535627
+						}
+					],
+					"sid": 676117399324644,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 529635864025808
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "TravelHelpInit",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 671715735960659,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 420313470876157,
+							"parameters": {
+								"object-to-create": "TravelHelpBack",
+								"layer": "\"Top\"",
+								"x": "21",
+								"y": "265",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TravelHelpText",
+							"sid": 770107561736139,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "TravelHelpBack",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 474333941645648
+				}
+			]
+		}
+	],
+	"sid": 904489977219608
+}

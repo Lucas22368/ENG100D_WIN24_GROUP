@@ -1,37 +1,31 @@
 {
-	"name": "LeftBorder",
+	"name": "TravelPoint",
 	"plugin-id": "Sprite",
-	"sid": 373183988231506,
+	"sid": 430960214140414,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 437554217917440
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 5,
-						"height": 21,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 123,
+						"height": 123,
+						"originX": 0.4959349593495935,
+						"originY": 0.4715447154471545,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6064037,
+						"imageSpriteId": 8339006,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 962583597373183,
-				"name": "Default",
+				"sid": 278974872250539,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

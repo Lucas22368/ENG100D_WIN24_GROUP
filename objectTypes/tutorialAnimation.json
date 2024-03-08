@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 560,
-						"height": 1000,
+						"width": 480,
+						"height": 854,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2520589,
+						"imageSpriteId": 7346076,
 						"collisionPoly": {
 							"points": [
 								0.04358974358974359,
@@ -36,14 +36,14 @@
 						"tag": ""
 					},
 					{
-						"width": 560,
-						"height": 1000,
+						"width": 480,
+						"height": 854,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3496948,
+						"imageSpriteId": 879876,
 						"collisionPoly": {
 							"points": [
 								0.04358974358974359,
@@ -61,14 +61,14 @@
 						"tag": ""
 					},
 					{
-						"width": 560,
-						"height": 1000,
+						"width": 480,
+						"height": 854,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2271419,
+						"imageSpriteId": 3334197,
 						"collisionPoly": {
 							"points": [
 								0.04358974358974359,
@@ -86,14 +86,14 @@
 						"tag": ""
 					},
 					{
-						"width": 560,
-						"height": 1000,
+						"width": 480,
+						"height": 854,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4707620,
+						"imageSpriteId": 857408,
 						"collisionPoly": {
 							"points": [
 								0.04358974358974359,
@@ -111,14 +111,14 @@
 						"tag": ""
 					},
 					{
-						"width": 560,
-						"height": 1000,
+						"width": 480,
+						"height": 854,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2866439,
+						"imageSpriteId": 7841161,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

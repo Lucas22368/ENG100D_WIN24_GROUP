@@ -22,6 +22,26 @@
 			"sid": 994446667258730
 		},
 		{
+			"eventType": "variable",
+			"name": "curPosX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 168413668644513
+		},
+		{
+			"eventType": "variable",
+			"name": "curPosY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 402947669298368
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Emission Events"
 		},
@@ -47,6 +67,24 @@
 				{
 					"callFunction": "makeCarTrail",
 					"sid": 858270084532343
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 276312106343741,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "car.X"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 177304500160057,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "car.Y"
+					}
 				}
 			],
 			"sid": 527717921058595,
@@ -90,6 +128,24 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 454474303832933,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "car.Y"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 584593052531276,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "car.X"
+					}
+				},
+				{
 					"id": "set-x",
 					"objectClass": "car",
 					"sid": 457806222056567,
@@ -119,6 +175,24 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 682258007158362,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "Bike.X"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 910685613638971,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "Bike.Y"
+					}
+				},
 				{
 					"callFunction": "makeBikeTrail",
 					"sid": 956598365618479
@@ -169,6 +243,24 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 665759895290179,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "Bike.X"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 816235556083444,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "Bike.Y"
+					}
+				},
+				{
 					"id": "set-x",
 					"objectClass": "Bike",
 					"sid": 308366128309002,
@@ -192,6 +284,134 @@
 			"text": "barrier collision properties"
 		},
 		{
+			"functionName": "RightShift",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 965195927589628,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "round((curPosX + 17) / 32) * 32"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 794314285500313,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "round((curPosY) / 32) * 32"
+					}
+				}
+			],
+			"sid": 604735234374541
+		},
+		{
+			"functionName": "LeftShift",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 966467981550445,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "round((curPosX - 17) / 32) * 32"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 855679833354822,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "round((curPosY) / 32) * 32"
+					}
+				}
+			],
+			"sid": 496157750264941
+		},
+		{
+			"functionName": "UpShift",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 519151198570261,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "round((curPosY - 17) / 32) * 32"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 243018376514862,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "round((curPosX ) / 32) * 32"
+					}
+				}
+			],
+			"sid": 342127614277184
+		},
+		{
+			"functionName": "DownShift",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 840921339314496,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "round((curPosY + 17) / 32) * 32"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 110140383257483,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "round((curPosX) / 32) * 32"
+					}
+				}
+			],
+			"sid": 311393715111725
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -207,20 +427,60 @@
 				{
 					"id": "drop",
 					"objectClass": "car",
-					"sid": 374245467616490,
+					"sid": 114442802182189,
 					"behaviorType": "DragDrop"
 				},
 				{
-					"id": "set-x",
+					"callFunction": "LeftShift",
+					"sid": 796783824311214
+				},
+				{
+					"id": "set-position",
 					"objectClass": "car",
-					"sid": 978115104238982,
+					"sid": 633300724168262,
 					"parameters": {
-						"x": "car.X - 32"
+						"x": "curPosX",
+						"y": "curPosY"
 					}
 				}
 			],
 			"sid": 878530678062540,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
+					"sid": 244474477678300,
+					"parameters": {
+						"object": "LeftBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 735932130734041,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "RightShift",
+					"sid": 682228621530990
+				},
+				{
+					"id": "set-position",
+					"objectClass": "car",
+					"sid": 475661812510566,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 173196283099380
 		},
 		{
 			"eventType": "block",
@@ -242,11 +502,16 @@
 					"behaviorType": "DragDrop"
 				},
 				{
-					"id": "set-y",
+					"callFunction": "DownShift",
+					"sid": 372647086878257
+				},
+				{
+					"id": "set-position",
 					"objectClass": "car",
-					"sid": 236836495683681,
+					"sid": 331424765900077,
 					"parameters": {
-						"y": "car.Y + 32"
+						"x": "curPosX",
+						"y": "curPosY"
 					}
 				}
 			],
@@ -260,7 +525,7 @@
 					"objectClass": "car",
 					"sid": 168786491687969,
 					"parameters": {
-						"object": "RightCorner"
+						"object": "TopRightBorder"
 					}
 				}
 			],
@@ -272,19 +537,20 @@
 					"behaviorType": "DragDrop"
 				},
 				{
-					"id": "set-x",
-					"objectClass": "car",
-					"sid": 694791356682834,
-					"parameters": {
-						"x": "round((car.X - 17) / 32) * 32"
-					}
+					"callFunction": "DownShift",
+					"sid": 151606814820523
 				},
 				{
-					"id": "set-y",
+					"callFunction": "LeftShift",
+					"sid": 688289566124726
+				},
+				{
+					"id": "set-position",
 					"objectClass": "car",
-					"sid": 351271718838433,
+					"sid": 430093844820589,
 					"parameters": {
-						"y": "round((car.Y + 17) / 32) * 32"
+						"x": "curPosX",
+						"y": "curPosY"
 					}
 				}
 			],
@@ -296,9 +562,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "car",
-					"sid": 413572334114014,
+					"sid": 810812275268157,
 					"parameters": {
-						"object": "LeftBorder"
+						"object": "TopLeftBorder"
 					}
 				}
 			],
@@ -306,19 +572,28 @@
 				{
 					"id": "drop",
 					"objectClass": "car",
-					"sid": 616675694832486,
+					"sid": 746329362594185,
 					"behaviorType": "DragDrop"
 				},
 				{
-					"id": "set-x",
+					"callFunction": "DownShift",
+					"sid": 120033560132874
+				},
+				{
+					"callFunction": "RightShift",
+					"sid": 798787669481112
+				},
+				{
+					"id": "set-position",
 					"objectClass": "car",
-					"sid": 431833713340148,
+					"sid": 511560861078909,
 					"parameters": {
-						"x": "car.X + 32"
+						"x": "curPosX",
+						"y": "curPosY"
 					}
 				}
 			],
-			"sid": 315179619065209
+			"sid": 816986157714308
 		},
 		{
 			"eventType": "block",
@@ -340,11 +615,16 @@
 					"behaviorType": "DragDrop"
 				},
 				{
-					"id": "set-y",
+					"callFunction": "UpShift",
+					"sid": 990703921271288
+				},
+				{
+					"id": "set-position",
 					"objectClass": "car",
-					"sid": 299869181095770,
+					"sid": 190682825305653,
 					"parameters": {
-						"y": "car.Y - 32"
+						"x": "curPosX",
+						"y": "curPosY"
 					}
 				}
 			],
@@ -356,9 +636,48 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "car",
+					"sid": 797655548802826,
+					"parameters": {
+						"object": "BottomRightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "car",
+					"sid": 225808564760942,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "UpShift",
+					"sid": 632813683858765
+				},
+				{
+					"callFunction": "LeftShift",
+					"sid": 990021236610084
+				},
+				{
+					"id": "set-position",
+					"objectClass": "car",
+					"sid": 921826201615628,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 964583106243471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "car",
 					"sid": 785436032074835,
 					"parameters": {
-						"object": "BottomLeft"
+						"object": "BottomLeftBorder"
 					}
 				}
 			],
@@ -370,16 +689,320 @@
 					"behaviorType": "DragDrop"
 				},
 				{
+					"callFunction": "UpShift",
+					"sid": 108625006068752
+				},
+				{
+					"callFunction": "RightShift",
+					"sid": 579314730544690
+				},
+				{
 					"id": "set-position",
 					"objectClass": "car",
-					"sid": 171037665278587,
+					"sid": 582448298076111,
 					"parameters": {
-						"x": "round((car.X + 17) / 32) * 32",
-						"y": "round((car.Y - 17) /32) * 32"
+						"x": "curPosX",
+						"y": "curPosY"
 					}
 				}
 			],
 			"sid": 541727284026373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 721864196596402,
+					"parameters": {
+						"object": "RightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 165265609346158,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "LeftShift",
+					"sid": 484632418639621
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 997459473286080,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 950151237269122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 561879598561343,
+					"parameters": {
+						"object": "LeftBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 996292203584256,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "RightShift",
+					"sid": 650218356143077
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 952392127540044,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 831308856183463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 853964136256135,
+					"parameters": {
+						"object": "TopBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 677058989146957,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "DownShift",
+					"sid": 250168060139583
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 780001372844330,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 941798065470227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 584389899666609,
+					"parameters": {
+						"object": "TopRightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 952718037719357,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "DownShift",
+					"sid": 548065387967738
+				},
+				{
+					"callFunction": "LeftShift",
+					"sid": 173160431135021
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 868097660029483,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 994536730431438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 611409664125549,
+					"parameters": {
+						"object": "TopLeftBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 546034652064117,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "DownShift",
+					"sid": 960112467537501
+				},
+				{
+					"callFunction": "RightShift",
+					"sid": 517848080423979
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 550934683416861,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 895372680666897
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 298674206289913,
+					"parameters": {
+						"object": "BottomBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 935945790019834,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "UpShift",
+					"sid": 885174166575648
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 525405375932359,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 615457983473695
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 678266412061013,
+					"parameters": {
+						"object": "BottomLeftBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 874578901045848,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "UpShift",
+					"sid": 355316006486863
+				},
+				{
+					"callFunction": "RightShift",
+					"sid": 748128369820694
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 461920821559137,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 600842683032820
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bike",
+					"sid": 459434102127056,
+					"parameters": {
+						"object": "BottomRightBorder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "drop",
+					"objectClass": "Bike",
+					"sid": 283370807355710,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"callFunction": "UpShift",
+					"sid": 963880517035662
+				},
+				{
+					"callFunction": "LeftShift",
+					"sid": 152561311461711
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Bike",
+					"sid": 506562331978004,
+					"parameters": {
+						"x": "curPosX",
+						"y": "curPosY"
+					}
+				}
+			],
+			"sid": 504812256114196
 		},
 		{
 			"eventType": "block",
@@ -397,7 +1020,7 @@
 					"objectClass": "carTrail",
 					"sid": 447928151162148,
 					"parameters": {
-						"object": "RightCorner"
+						"object": "TopRightBorder"
 					}
 				},
 				{
@@ -429,7 +1052,7 @@
 					"objectClass": "carTrail",
 					"sid": 358554316834058,
 					"parameters": {
-						"object": "BottomLeft"
+						"object": "BottomLeftBorder"
 					}
 				}
 			],
@@ -463,7 +1086,7 @@
 					"objectClass": "BikeTrail",
 					"sid": 961227151521898,
 					"parameters": {
-						"object": "RightCorner"
+						"object": "TopRightBorder"
 					}
 				},
 				{
@@ -530,10 +1153,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 235179287451768,
+					"sid": 660018299872868,
 					"parameters": {
 						"object-to-create": "Bike",
-						"layer": "7",
+						"layer": "6",
 						"x": "car.X",
 						"y": "car.Y",
 						"create-hierarchy": false,
@@ -596,10 +1219,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 861811350645414,
+					"sid": 631787926778106,
 					"parameters": {
 						"object-to-create": "car",
-						"layer": "7",
+						"layer": "6",
 						"x": "Bike.X",
 						"y": "Bike.Y",
 						"create-hierarchy": false,
@@ -658,6 +1281,24 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 880949320210021,
+					"parameters": {
+						"variable": "curPosX",
+						"value": "car.X"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 435778615620543,
+					"parameters": {
+						"variable": "curPosY",
+						"value": "car.Y"
+					}
+				},
 				{
 					"id": "set-position",
 					"objectClass": "car",
@@ -725,23 +1366,31 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 218421975834909,
+					"sid": 189944937302908,
 					"parameters": {
 						"object-to-create": "carTrail",
-						"layer": "6",
-						"x": "round(car.X / 32) * 32",
-						"y": "round(car.Y / 32) * 32",
+						"layer": "5",
+						"x": "round(car.X / 32) * 32 + 8",
+						"y": "round(car.Y / 32) * 32 + 8",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
 				},
 				{
+					"id": "set-opacity",
+					"objectClass": "carTrail",
+					"sid": 110022643985029,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
 					"id": "set-size",
 					"objectClass": "carTrail",
-					"sid": 514089870325157,
+					"sid": 104098766170008,
 					"parameters": {
-						"width": "30",
-						"height": "30"
+						"width": "16",
+						"height": "16"
 					}
 				},
 				{
@@ -779,23 +1428,31 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 874324457767155,
+					"sid": 520139638783852,
 					"parameters": {
 						"object-to-create": "BikeTrail",
-						"layer": "6",
-						"x": "round(Bike.X / 32) * 32",
-						"y": "round(Bike.Y / 32) * 32",
+						"layer": "5",
+						"x": "round(Bike.X / 32) * 32 + 8",
+						"y": "round(Bike.Y / 32) * 32 + 8",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
 				},
 				{
+					"id": "set-opacity",
+					"objectClass": "BikeTrail",
+					"sid": 735885339273822,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
 					"id": "set-size",
 					"objectClass": "BikeTrail",
-					"sid": 146276385776523,
+					"sid": 902282479744938,
 					"parameters": {
-						"width": "30",
-						"height": "30"
+						"width": "16",
+						"height": "16"
 					}
 				},
 				{
@@ -822,9 +1479,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "emissionText",
-					"sid": 841309373536206,
+					"sid": 705930638134592,
 					"parameters": {
-						"text": "\"Emissions used: \""
+						"text": "\"emissions used: \" & emissionTotal"
 					}
 				}
 			],
@@ -843,9 +1500,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "TimerText",
-					"sid": 465569363018412,
+					"sid": 613588297522437,
 					"parameters": {
-						"text": "\"Time Elapsed: \" & floor(timerTotal / 3600) & \"h \" & floor(timerTotal/ 60 % 60) & \"m \" & floor(timerTotal % 60) & \"s\""
+						"text": "\"Current Time: \" & floor(timerTotal / 3600) & \"h \" & floor(timerTotal/ 60 % 60) & \"m \" & floor(timerTotal % 60) & \"s\""
 					}
 				}
 			],
