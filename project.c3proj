@@ -261,17 +261,25 @@
 			"LeftBorder",
 			"BottomBorder",
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"BottomLeft",
 			"overlay"
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 =======
+=======
+>>>>>>> parent of 9ea1e30 (Trying to fix)
 			"BottomLeftBorder",
 			"overlay",
 			"BottomRightBorder",
-			"TopLeftBorder",
+			"TopLeftBorder"
+=======
 			"BottomLeft",
 			"overlay"
+<<<<<<< HEAD
 >>>>>>> parent of 07c4b78 (Attempting Revvert)
+=======
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+>>>>>>> parent of 9ea1e30 (Trying to fix)
 		],
 		"subfolders": []
 	},
