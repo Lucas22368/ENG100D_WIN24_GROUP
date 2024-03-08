@@ -8,6 +8,417 @@
 		{
 			"eventType": "include",
 			"includeSheet": "Motion Events"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 318830408103317
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 531916203732710,
+					"parameters": {
+						"object-to-create": "Welcome",
+						"layer": "1",
+						"x": "252",
+						"y": "430",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 815712803860730,
+					"parameters": {
+						"object-to-create": "nextButton2",
+						"layer": "2",
+						"x": "357",
+						"y": "497",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 250644086099861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 557421587705299,
+					"parameters": {
+						"object": "nextButton2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Welcome",
+					"sid": 573017584902579
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 818808671829746,
+					"parameters": {
+						"object-to-create": "Level1Goal",
+						"layer": "1",
+						"x": "252",
+						"y": "430",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 260687053372400,
+					"parameters": {
+						"object-to-create": "StartTutorial",
+						"layer": "2",
+						"x": "251",
+						"y": "477",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 617814346439313,
+					"parameters": {
+						"object-to-create": "SkipForNow",
+						"layer": "2",
+						"x": "251",
+						"y": "516",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 575987039328089,
+					"parameters": {
+						"object-to-create": "theX",
+						"layer": "2",
+						"x": "385",
+						"y": "277",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nextButton2",
+					"sid": 231821525254976
+				}
+			],
+			"sid": 442067059137149
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 589595270226379,
+					"parameters": {
+						"object": "SkipForNow"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Level1Goal",
+					"sid": 565374238801262
+				},
+				{
+					"id": "destroy",
+					"objectClass": "StartTutorial",
+					"sid": 502360438497130
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SkipForNow",
+					"sid": 683570931614927
+				},
+				{
+					"id": "destroy",
+					"objectClass": "theX",
+					"sid": 936298633927839
+				}
+			],
+			"sid": 238360012964393
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 635775977438977
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 270882300663483,
+					"parameters": {
+						"object": "theX"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Level1Goal",
+					"sid": 878968064583451
+				},
+				{
+					"id": "destroy",
+					"objectClass": "StartTutorial",
+					"sid": 396579153818182
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SkipForNow",
+					"sid": 831237329536519
+				},
+				{
+					"id": "destroy",
+					"objectClass": "theX",
+					"sid": 920584800088598
+				}
+			],
+			"sid": 845595426173130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 919132039062316,
+					"parameters": {
+						"object": "StartTutorial"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 622451139864233,
+					"parameters": {
+						"object-to-create": "tutorialAnimation",
+						"layer": "1",
+						"x": "245",
+						"y": "427",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 558682782092890,
+					"parameters": {
+						"object-to-create": "nextButton",
+						"layer": "1",
+						"x": "378",
+						"y": "263",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "tutorialAnimation",
+					"sid": 122814823982040,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "tutorialAnimation",
+					"sid": 526201276311307
+				},
+				{
+					"callFunction": "setTutorialFrame",
+					"sid": 349671384285039
+				},
+				{
+					"id": "destroy",
+					"objectClass": "theX",
+					"sid": 277203934928422
+				},
+				{
+					"id": "destroy",
+					"objectClass": "StartTutorial",
+					"sid": 672074978823610
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SkipForNow",
+					"sid": 176018112149092
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Level1Goal",
+					"sid": 202750492896290
+				}
+			],
+			"sid": 983459295477058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 663935904667466,
+					"parameters": {
+						"object": "nextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "tutorialAnimation",
+					"sid": 757948159910789,
+					"parameters": {
+						"frame-number": "tutorialFrameIdx"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "tutorialAnimation",
+					"sid": 217896053452668
+				},
+				{
+					"callFunction": "setTutorialFrame",
+					"sid": 969199556475133
+				}
+			],
+			"sid": 926728503835889,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 714844347713318,
+							"parameters": {
+								"first-value": "tutorialFrameIdx",
+								"comparison": 5,
+								"second-value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "tutorialAnimation",
+							"sid": 101088500386058,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "nextButton",
+							"sid": 204309771951738
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 305419803443228,
+							"parameters": {
+								"object-to-create": "playButton",
+								"layer": "1",
+								"x": "412",
+								"y": "796",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 675508141824566
+				}
+			]
+		},
+		{
+			"functionName": "setTutorialFrame2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 523082429496926,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 899290612654367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 704252351546414,
+					"parameters": {
+						"object": "playButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "tutorialAnimation",
+					"sid": 715147711094396
+				},
+				{
+					"id": "destroy",
+					"objectClass": "playButton",
+					"sid": 831770013867977
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 102811190387018,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 333657753893654
 		}
 	],
 	"sid": 462271210908144
