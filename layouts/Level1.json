@@ -924,6 +924,40 @@
 			"global": false
 		},
 		{
+			"name": "Tutorial Layer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 688488874637126,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Trail Layer",
 			"overriden": 0,
 			"subLayers": [],
@@ -1030,6 +1064,7 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+<<<<<<< HEAD
 		},
 		{
 			"name": "Tutorial Layer",
@@ -2822,6 +2857,8 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+=======
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 		}
 	],
 	"sid": 972532795146195,

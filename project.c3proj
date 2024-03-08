@@ -188,10 +188,15 @@
 			"nextButton2",
 			"LeftBorder",
 			"BottomBorder",
+<<<<<<< HEAD
 			"BottomLeftBorder",
 			"overlay",
 			"BottomRightBorder",
 			"TopLeftBorder"
+=======
+			"BottomLeft",
+			"overlay"
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 		],
 		"subfolders": []
 	},

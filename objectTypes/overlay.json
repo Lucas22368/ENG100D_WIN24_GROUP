@@ -11,14 +11,23 @@
 			{
 				"frames": [
 					{
+<<<<<<< HEAD
 						"width": 480,
 						"height": 854,
+=======
+						"width": 780,
+						"height": 1688,
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< HEAD
 						"imageSpriteId": 7061206,
+=======
+						"imageSpriteId": 2050933,
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

@@ -27,10 +27,17 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 494283263194678,
 					"parameters": {
 						"object-to-create": "tutorialAnimation",
 						"layer": "7",
+=======
+					"sid": 652557506561394,
+					"parameters": {
+						"object-to-create": "tutorialAnimation",
+						"layer": "1",
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 						"x": "245",
 						"y": "427",
 						"create-hierarchy": false,
@@ -40,10 +47,17 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 793462516119792,
 					"parameters": {
 						"object-to-create": "nextButton",
 						"layer": "7",
+=======
+					"sid": 517760926184174,
+					"parameters": {
+						"object-to-create": "nextButton",
+						"layer": "1",
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 						"x": "378",
 						"y": "263",
 						"create-hierarchy": false,
