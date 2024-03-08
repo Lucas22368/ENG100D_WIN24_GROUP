@@ -91,7 +91,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -127,7 +127,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -199,7 +199,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -271,7 +271,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -307,7 +307,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -379,7 +379,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -515,7 +515,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -551,7 +551,7 @@
 					}
 				},
 				{
-					"type": "RightCorner",
+					"type": "TopRightBorder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

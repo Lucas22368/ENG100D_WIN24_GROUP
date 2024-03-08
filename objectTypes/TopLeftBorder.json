@@ -1,14 +1,14 @@
 {
-	"name": "BottomLeft",
+	"name": "TopLeftBorder",
 	"plugin-id": "Sprite",
-	"sid": 262208974104949,
+	"sid": 487934327166956,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 518615419592570
+			"sid": 259394496178929
 		}
 	],
 	"effectTypes": [],
@@ -24,13 +24,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3510511,
+						"imageSpriteId": 4193880,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 639875552496496,
+				"sid": 496481768302769,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
