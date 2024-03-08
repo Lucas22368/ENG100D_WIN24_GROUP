@@ -1,7 +1,7 @@
 {
-	"name": "Welcome",
+	"name": "objectiveButton",
 	"plugin-id": "Sprite",
-	"sid": 181899957090126,
+	"sid": 427177590899051,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,24 +11,32 @@
 			{
 				"frames": [
 					{
-						"width": 400,
-						"height": 361,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 80,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3064253,
+						"imageSpriteId": 69138,
 						"collisionPoly": {
 							"points": [
-								0.04358974358974359,
+								0.4375,
+								0.025,
+								0.5625,
+								0.025,
+								1,
+								0.275,
+								1,
+								0.4,
+								0.875,
+								0.9625,
+								0.125,
+								0.9625,
 								0,
-								1,
-								0.011848341232227487,
-								1,
-								1,
+								0.4,
 								0,
-								1
+								0.275
 							]
 						},
 						"useCollisionPoly": true,
@@ -36,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 946009926572406,
+				"sid": 149407742857578,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

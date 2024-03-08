@@ -1,0 +1,178 @@
+{
+	"name": "Level1 End Screen Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 999772225400745,
+					"parameters": {
+						"object": "endIconTemp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "endScreen",
+					"sid": 744078576249772,
+					"parameters": {
+						"x": "240",
+						"y": "427"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "endNextLevelButton",
+					"sid": 731480254334922,
+					"parameters": {
+						"x": "162",
+						"y": "553"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "endTryAgainButton",
+					"sid": 871301353580106,
+					"parameters": {
+						"x": "316",
+						"y": "553"
+					}
+				}
+			],
+			"sid": 757685984120712,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 340610448528257,
+							"parameters": {
+								"first-value": "leaf1.leaf1Achieved",
+								"comparison": 5,
+								"second-value": "emissionTotal"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "leaf1",
+							"sid": 641516929146526,
+							"parameters": {
+								"x": "177",
+								"y": "424"
+							}
+						}
+					],
+					"sid": 655190451425592
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 497628777917863,
+							"parameters": {
+								"first-value": "leaf2.leaf2Achieved",
+								"comparison": 5,
+								"second-value": "emissionTotal"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "leaf2",
+							"sid": 442873585069534,
+							"parameters": {
+								"x": "240",
+								"y": "424"
+							}
+						}
+					],
+					"sid": 399216607691259
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 846083191471863,
+							"parameters": {
+								"first-value": "leaf3.leaf3Achieved",
+								"comparison": 5,
+								"second-value": "emissionTotal"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "leaf3",
+							"sid": 617760521234342,
+							"parameters": {
+								"x": "303",
+								"y": "424"
+							}
+						}
+					],
+					"sid": 659837117476249
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 221353876971830,
+					"parameters": {
+						"object": "endTryAgainButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "endScreen",
+					"sid": 790063366636070
+				},
+				{
+					"id": "destroy",
+					"objectClass": "endNextLevelButton",
+					"sid": 878659091316311
+				},
+				{
+					"id": "destroy",
+					"objectClass": "endTryAgainButton",
+					"sid": 189344555542769
+				},
+				{
+					"id": "destroy",
+					"objectClass": "leaf1",
+					"sid": 825154112191654
+				},
+				{
+					"id": "destroy",
+					"objectClass": "leaf2",
+					"sid": 143732075878297
+				},
+				{
+					"id": "destroy",
+					"objectClass": "leaf3",
+					"sid": 443062061463168
+				}
+			],
+			"sid": 594424120844526
+		}
+	],
+	"sid": 565928176161365
+}

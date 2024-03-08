@@ -822,9 +822,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "emissionText",
-					"sid": 705930638134592,
+					"sid": 841309373536206,
 					"parameters": {
-						"text": "\"emissions used: \" & emissionTotal"
+						"text": "\"Emissions used: \""
 					}
 				}
 			],
@@ -843,9 +843,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "TimerText",
-					"sid": 613588297522437,
+					"sid": 465569363018412,
 					"parameters": {
-						"text": "\"Current Time: \" & floor(timerTotal / 3600) & \"h \" & floor(timerTotal/ 60 % 60) & \"m \" & floor(timerTotal % 60) & \"s\""
+						"text": "\"Time Elapsed: \" & floor(timerTotal / 3600) & \"h \" & floor(timerTotal/ 60 % 60) & \"m \" & floor(timerTotal % 60) & \"s\""
 					}
 				}
 			],
