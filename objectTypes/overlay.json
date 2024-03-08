@@ -1,17 +1,7 @@
 {
-<<<<<<< HEAD
 	"name": "overlay",
 	"plugin-id": "Sprite",
 	"sid": 227566887472476,
-=======
-<<<<<<<< HEAD:objectTypes/TravelPoint.json
-	"name": "TravelPoint",
-========
-	"name": "overlay",
->>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets):objectTypes/overlay.json
-	"plugin-id": "Sprite",
-	"sid": 430960214140414,
->>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -21,26 +11,37 @@
 			{
 				"frames": [
 					{
+<<<<<<< HEAD
 						"width": 480,
 						"height": 854,
+=======
+						"width": 780,
+						"height": 1688,
+>>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< HEAD
 						"imageSpriteId": 7061206,
+=======
+						"imageSpriteId": 2050933,
+>>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
 				"sid": 920667403738026,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)

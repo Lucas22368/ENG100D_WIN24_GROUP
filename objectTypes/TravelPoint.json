@@ -1,9 +1,5 @@
 {
-<<<<<<<< HEAD:objectTypes/TravelPoint.json
 	"name": "TravelPoint",
-========
-	"name": "overlay",
->>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets):objectTypes/overlay.json
 	"plugin-id": "Sprite",
 	"sid": 430960214140414,
 	"isGlobal": false,
