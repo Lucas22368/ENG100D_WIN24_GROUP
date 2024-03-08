@@ -175,11 +175,11 @@
 			"Text3",
 			"TimerText",
 			"LevelBack",
-			"Tilemap2",
 			"Sprite6",
 			"Sprite7",
 			"Sprite8",
-			"Sprite9"
+			"Sprite9",
+			"Tilemap2"
 		],
 		"subfolders": []
 	},
