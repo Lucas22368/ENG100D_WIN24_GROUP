@@ -117,14 +117,17 @@
 		"items": [
 <<<<<<< HEAD
 		"Touch",
+		"StartPlanetFlipTitle",
 		"CarSwitch",
 		"car",
 		"sprite",
 		"Sprite2",
 		"Sprite3",
 		"Sprite4",
+		"motionResetButton",
 		"Reset2",
 		"ResetText",
+		"StarText",
 		"Tilemap",
 		"carTrail",
 		"motionResetText",

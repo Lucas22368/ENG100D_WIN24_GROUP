@@ -21,14 +21,41 @@
 			{
 				"frames": [
 					{
+<<<<<<< HEAD
 						"width": 480,
 						"height": 854,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+						"width": 480,
+						"height": 854,
+=======
+						"width": 780,
+						"height": 1688,
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+=======
+						"width": 780,
+						"height": 1688,
+>>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
+>>>>>>> parent of 4bf8137 (Attempting Revert)
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+<<<<<<< HEAD
 						"imageSpriteId": 7061206,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+						"imageSpriteId": 7061206,
+=======
+						"imageSpriteId": 2050933,
+>>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+=======
+						"imageSpriteId": 2050933,
+>>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
+>>>>>>> parent of 4bf8137 (Attempting Revert)
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -40,7 +67,11 @@
 		"subfolders": []
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+=======
+}
+>>>>>>> parent of 4bf8137 (Attempting Revert)
