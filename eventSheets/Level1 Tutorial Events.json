@@ -37,7 +37,7 @@
 					"parameters": {
 						"object-to-create": "tutorialAnimation",
 						"layer": "1",
->>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+>>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 						"x": "245",
 						"y": "427",
 						"create-hierarchy": false,
@@ -57,7 +57,7 @@
 					"parameters": {
 						"object-to-create": "nextButton",
 						"layer": "1",
->>>>>>> parent of 7309fe6 (Created end screen, fixed tutorial + Deleted unnecessary sprites, layoutes, event sheets)
+>>>>>>> parent of f85132b (Merge branch 'new' of https://github.com/Lucas22368/ENG100D_WIN24_GROUP into new)
 						"x": "378",
 						"y": "263",
 						"create-hierarchy": false,
