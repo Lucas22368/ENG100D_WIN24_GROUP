@@ -57,6 +57,14 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "car",
+					"sid": 176052245657289,
+					"parameters": {
+						"layer": "0"
+					}
 				}
 			],
 			"sid": 250644086099861
@@ -176,6 +184,14 @@
 					"id": "destroy",
 					"objectClass": "overlay",
 					"sid": 546845010107042
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "car",
+					"sid": 876942467505245,
+					"parameters": {
+						"layer": "8"
+					}
 				}
 			],
 			"sid": 238360012964393
@@ -302,6 +318,11 @@
 					"id": "destroy",
 					"objectClass": "Level1Goal",
 					"sid": 202750492896290
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlay",
+					"sid": 701757114550207
 				}
 			],
 			"sid": 983459295477058
@@ -439,14 +460,93 @@
 						"variable": "tutorialFrameIdx",
 						"value": "0"
 					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "overlay",
-					"sid": 958432044728584
 				}
 			],
 			"sid": 333657753893654
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 939835375379492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 937554668153542,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Welcome",
+					"sid": 703827467601763
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 520139832480865,
+					"parameters": {
+						"object-to-create": "Level1Goal",
+						"layer": "2",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 121196802321754,
+					"parameters": {
+						"object-to-create": "StartTutorial",
+						"layer": "2",
+						"x": "238",
+						"y": "482",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 867798997071210,
+					"parameters": {
+						"object-to-create": "theX",
+						"layer": "2",
+						"x": "371",
+						"y": "258",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nextButton2",
+					"sid": 340269415347092
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 875278027317559,
+					"parameters": {
+						"object-to-create": "overlay",
+						"layer": "1",
+						"x": "283",
+						"y": "316",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 934819499868430
 		}
 	],
 	"sid": 462271210908144
