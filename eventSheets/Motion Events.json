@@ -329,10 +329,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 958714037351917,
+					"sid": 363714759607048,
 					"parameters": {
 						"variable": "curPosX",
-						"value": "round((curPosX - 32) / 32) * 32"
+						"value": "round((curPosX - 16) / 32) * 32"
 					}
 				},
 				{
@@ -421,6 +421,14 @@
 					"parameters": {
 						"object": "RightBorder"
 					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "car",
+					"sid": 147668511706841,
+					"parameters": {
+						"object": "RightBorder"
+					}
 				}
 			],
 			"actions": [
@@ -432,12 +440,12 @@
 				},
 				{
 					"callFunction": "LeftShift",
-					"sid": 374423366048346
+					"sid": 709796982091103
 				},
 				{
 					"id": "set-position",
 					"objectClass": "car",
-					"sid": 725757667554881,
+					"sid": 348628706592356,
 					"parameters": {
 						"x": "curPosX",
 						"y": "curPosY"
