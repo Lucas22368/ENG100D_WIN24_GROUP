@@ -180,6 +180,15 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 741486493660822,
+					"parameters": {
+						"variable": "calculatedCO2Emission",
+						"value": "380"
+					}
+				},
+				{
 					"id": "set-animation-frame",
 					"objectClass": "emissionBarDisplay",
 					"sid": 297380850120088,

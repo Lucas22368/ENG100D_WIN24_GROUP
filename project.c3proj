@@ -161,7 +161,8 @@
 			"resetConfrim",
 			"Sprite14",
 			"Cancel",
-			"Tilemap3"
+			"Tilemap3",
+			"endCO2"
 		],
 		"subfolders": []
 	},

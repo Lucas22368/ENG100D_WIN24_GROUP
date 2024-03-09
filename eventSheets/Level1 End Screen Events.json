@@ -57,6 +57,19 @@
 						"x": "205",
 						"y": "548"
 					}
+				},
+				{
+					"callFunction": "compareEmissions",
+					"sid": 464714582800137
+				},
+				{
+					"id": "set-position",
+					"objectClass": "endCO2",
+					"sid": 331750336380148,
+					"parameters": {
+						"x": "293",
+						"y": "430"
+					}
 				}
 			],
 			"sid": 757685984120712,

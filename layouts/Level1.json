@@ -3035,7 +3035,7 @@
 				{
 					"type": "emissionText",
 					"properties": {
-						"text": "Emission Score:",
+						"text": "Emissions Used:",
 						"enable-bbcode": true,
 						"font": "Montserrat-Bold",
 						"size": 12,
@@ -3099,10 +3099,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 303.4874237056851,
-						"y": 65.42285397800651,
-						"width": 88,
-						"height": 16,
+						"x": 311,
+						"y": 65,
+						"width": 144,
+						"height": 22,
 						"originX": 0.5237843551797041,
 						"originY": 0.5,
 						"color": [
@@ -3525,8 +3525,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 622,
-						"y": 43,
+						"x": 617,
+						"y": 102,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -3703,6 +3703,51 @@
 						"y": 1297,
 						"width": 295.3846153846154,
 						"height": 432.0592417061611,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "endCO2",
+					"properties": {
+						"text": "<CO2 Saved>",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 140,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 619,
+						"y": 68,
+						"width": 200,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [

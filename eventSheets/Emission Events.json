@@ -42,6 +42,16 @@
 			"sid": 649729467409984
 		},
 		{
+			"eventType": "variable",
+			"name": "calculatedCO2Emission",
+			"type": "number",
+			"initialValue": "380",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 817799046502383
+		},
+		{
 			"functionName": "addCarEmission",
 			"functionDescription": "changes emission value",
 			"functionCategory": "",
@@ -211,6 +221,37 @@
 				}
 			],
 			"sid": 670969730862462
+		},
+		{
+			"functionName": "compareEmissions",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 176810515814900,
+					"parameters": {
+						"variable": "calculatedCO2Emission",
+						"value": "emissionTotal"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "endCO2",
+					"sid": 876874409354136,
+					"parameters": {
+						"text": "round(calculatedCO2Emission/380*100) & \"%\""
+					}
+				}
+			],
+			"sid": 989349193675463
 		}
 	],
 	"sid": 500283305365175
