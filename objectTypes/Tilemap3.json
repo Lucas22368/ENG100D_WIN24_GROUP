@@ -1,7 +1,7 @@
 {
-	"name": "Tilemap2",
+	"name": "Tilemap3",
 	"plugin-id": "Tilemap",
-	"sid": 828796187039066,
+	"sid": 900554414784646,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -14,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 8962851,
+		"imageSpriteId": 2540119,
 		"useCollisionPoly": true,
 		"tag": ""
 	},
