@@ -165,7 +165,9 @@
 			"endCO2",
 			"disable",
 			"fakeobjectiveButton",
-			"fakereset"
+			"fakereset",
+			"BikeHighlight",
+			"CarHighlight"
 		],
 		"subfolders": []
 	},

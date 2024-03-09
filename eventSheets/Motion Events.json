@@ -1254,6 +1254,22 @@
 					"id": "destroy",
 					"objectClass": "car",
 					"sid": 284129946649903
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BikeHighlight",
+					"sid": 486510397264956,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CarHighlight",
+					"sid": 951966819084211,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 402205284135350
@@ -1302,6 +1318,22 @@
 					"id": "destroy",
 					"objectClass": "Bike",
 					"sid": 513568385537791
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BikeHighlight",
+					"sid": 138026046629612,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CarHighlight",
+					"sid": 670095140361736,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 302441824478485
