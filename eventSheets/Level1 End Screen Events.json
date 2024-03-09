@@ -235,6 +235,15 @@
 						"variable": "timerTotal",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 125559240253843,
+					"parameters": {
+						"variable": "calculatedCO2Emission",
+						"value": "380"
+					}
 				}
 			],
 			"sid": 594424120844526
