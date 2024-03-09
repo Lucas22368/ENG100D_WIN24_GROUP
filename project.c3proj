@@ -162,7 +162,10 @@
 			"Sprite14",
 			"Cancel",
 			"Tilemap3",
-			"endCO2"
+			"endCO2",
+			"disable",
+			"fakeobjectiveButton",
+			"fakereset"
 		],
 		"subfolders": []
 	},

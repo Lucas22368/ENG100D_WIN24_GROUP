@@ -126,6 +126,16 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reset",
+					"sid": 354260718131906
+				},
+				{
+					"id": "destroy",
+					"objectClass": "objectiveButton",
+					"sid": 834892216179404
 				}
 			],
 			"sid": 780358478549287,
@@ -237,6 +247,32 @@
 					"id": "destroy",
 					"objectClass": "ResetPrompt",
 					"sid": 271275370250449
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 207134704474127,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 299052553197585,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 760038144130267,
@@ -307,6 +343,16 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reset",
+					"sid": 270214064728719
+				},
+				{
+					"id": "destroy",
+					"objectClass": "objectiveButton",
+					"sid": 471870533782750
 				}
 			],
 			"sid": 250644086099861
@@ -427,6 +473,32 @@
 					"id": "destroy",
 					"objectClass": "overlayLevel1",
 					"sid": 546845010107042
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 542117973098201,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 354147699263553,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 238360012964393
@@ -468,6 +540,32 @@
 					"id": "destroy",
 					"objectClass": "overlayLevel1",
 					"sid": 349585283823311
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 623268403450478,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 260808612626443,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 845595426173130
@@ -485,6 +583,28 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 647621476041317,
+					"parameters": {
+						"object-to-create": "overlayLevel1",
+						"layer": "7",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "overlayLevel1",
+					"sid": 423445219210100,
+					"parameters": {
+						"width": "480",
+						"height": "854"
+					}
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -523,6 +643,16 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reset",
+					"sid": 416237633051176
+				},
+				{
+					"id": "destroy",
+					"objectClass": "objectiveButton",
+					"sid": 932531288279194
 				}
 			],
 			"sid": 575312467009638,
@@ -617,6 +747,32 @@
 					"id": "destroy",
 					"objectClass": "Level1Goal",
 					"sid": 202750492896290
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 562691683302201,
+					"parameters": {
+						"object-to-create": "fakereset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 402238789897219,
+					"parameters": {
+						"object-to-create": "fakeobjectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 983459295477058
@@ -759,9 +915,49 @@
 					"id": "destroy",
 					"objectClass": "overlayLevel1",
 					"sid": 958432044728584
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 992908771152262,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 634779542702882,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fakeobjectiveButton",
+					"sid": 463124867783680
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fakereset",
+					"sid": 315224208739199
 				}
 			],
 			"sid": 333657753893654
+		},
+		{
+			"eventType": "script",
+			"script": ""
 		}
 	],
 	"sid": 462271210908144
