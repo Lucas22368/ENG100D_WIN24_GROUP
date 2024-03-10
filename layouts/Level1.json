@@ -7,54 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Tilemap2",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 77,
-					"instanceVariables": {},
-					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 15,
-							"height": 22,
-							"max-width": 40,
-							"max-height": 79,
-							"data": "1,16,31,46,61,76,91,106,121,136,151,166,181,196,211,226,241,256,271,286,301,316,331,56x0,2,17,32,47,62,77,92,107,122,137,152,167,182,197,212,227,242,257,272,287,302,317,332,56x0,3,18,33,48,63,78,93,108,123,138,153,168,183,198,213,228,243,258,273,288,303,318,333,56x0,4,19,34,49,64,79,94,109,124,139,154,169,184,199,214,229,244,259,274,289,304,319,334,56x0,5,20,35,50,65,80,95,110,125,140,155,170,185,200,215,230,245,260,275,290,305,320,335,56x0,6,21,36,51,66,81,96,111,126,141,156,171,186,201,216,231,246,261,276,291,306,321,336,56x0,7,22,37,52,67,82,97,112,127,142,157,172,187,202,217,232,247,262,277,292,307,322,337,56x0,8,23,38,53,68,83,98,113,128,143,158,173,188,203,218,233,248,263,278,293,308,323,338,56x0,9,24,39,54,69,84,99,114,129,144,159,174,189,204,219,234,249,264,279,294,309,324,339,56x0,10,25,40,55,70,85,100,115,130,145,160,175,190,205,220,235,250,265,280,295,310,325,340,56x0,11,26,41,56,71,86,101,116,131,146,161,176,191,206,221,236,251,266,281,296,311,326,341,56x0,12,27,42,57,72,87,102,117,132,147,162,177,192,207,222,237,252,267,282,297,312,327,342,56x0,13,28,43,58,73,88,103,118,133,148,163,178,193,208,223,238,253,268,283,298,313,328,343,56x0,14,29,44,59,74,89,104,119,134,149,164,179,194,209,224,239,254,269,284,299,314,329,344,56x0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,2031x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 96,
-						"width": 480,
-						"height": 704,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Tilemap3",
 					"properties": {
 						"initially-visible": true,
@@ -2845,56 +2797,6 @@
 					}
 				},
 				{
-					"type": "tutorialButtonTemp",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 24,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 65,
-					"instanceVariables": {
-						"name": "help"
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						},
-						"Fade": {
-							"properties": {
-								"fade-in-time": 1,
-								"wait-time": 0,
-								"fade-out-time": 0,
-								"destroy": false,
-								"enabled": false,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 512,
-						"y": 32,
-						"width": 32.1038186578138,
-						"height": 34.48187929913334,
-						"originX": 0.4827586206896552,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "LevelBack",
 					"properties": {
 						"initially-visible": true,
@@ -3250,35 +3152,6 @@
 						"height": 48,
 						"originX": 0.5614035087719298,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "endIconTemp",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 512,
-						"y": 160,
-						"width": 34,
-						"height": 41,
-						"originX": 0.4444444444444444,
-						"originY": 2.1481481481481484,
 						"color": [
 							1,
 							1,
@@ -3877,7 +3750,7 @@
 					}
 				},
 				{
-					"type": "Sprite16",
+					"type": "BusSwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -3906,7 +3779,7 @@
 					}
 				},
 				{
-					"type": "Sprite17",
+					"type": "TrolleySwitch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -3935,7 +3808,7 @@
 					}
 				},
 				{
-					"type": "Sprite18",
+					"type": "Lock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -3943,16 +3816,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 148,
+					"uid": 2,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 455,
-						"y": 841,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 434.9839049467547,
+						"y": 829.758418420146,
+						"width": 25.115224369920043,
+						"height": 25.115224369920043,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -3964,7 +3837,7 @@
 					}
 				},
 				{
-					"type": "Sprite18",
+					"type": "Lock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -3972,16 +3845,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 149,
+					"uid": 65,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 84,
-						"y": 841,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 60.25544646951772,
+						"y": 828.7748568873369,
+						"width": 25.115224369920043,
+						"height": 25.115224369920043,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

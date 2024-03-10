@@ -1,7 +1,7 @@
 {
-	"name": "Sprite15",
+	"name": "TestCoin",
 	"plugin-id": "Sprite",
-	"sid": 765099307182182,
+	"sid": 911318061438251,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 800,
+						"height": 800,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9992027,
+						"imageSpriteId": 5390632,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 784086064796533,
+				"sid": 873494465617194,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

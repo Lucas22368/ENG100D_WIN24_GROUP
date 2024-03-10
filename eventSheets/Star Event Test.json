@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Sprite2",
+					"objectClass": "TestCoin",
 					"sid": 220297931523588,
 					"parameters": {
 						"object": "sprite"
@@ -16,7 +16,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Sprite2",
+					"objectClass": "TestCoin",
 					"sid": 944431688938563
 				}
 			],
@@ -31,7 +31,7 @@
 					"objectClass": "System",
 					"sid": 811175070926356,
 					"parameters": {
-						"object-to-create": "Sprite4",
+						"object-to-create": "TestTwoStar",
 						"layer": "0",
 						"x": "100",
 						"y": "265",
@@ -51,7 +51,7 @@
 					"objectClass": "System",
 					"sid": 603284695611065,
 					"parameters": {
-						"object-to-create": "Sprite3",
+						"object-to-create": "TestOneStar",
 						"layer": "0",
 						"x": "100",
 						"y": "265",

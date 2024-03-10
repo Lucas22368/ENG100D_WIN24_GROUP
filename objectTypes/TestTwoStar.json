@@ -1,7 +1,7 @@
 {
-	"name": "Sprite14",
+	"name": "TestTwoStar",
 	"plugin-id": "Sprite",
-	"sid": 922978788554588,
+	"sid": 564390191132508,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 480,
+						"height": 360,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7856697,
+						"imageSpriteId": 358883,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 667812766931078,
+				"sid": 959822299690569,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
