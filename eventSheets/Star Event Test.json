@@ -6,60 +6,32 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Sprite2",
+					"objectClass": "TestCoin",
 					"sid": 220297931523588,
 					"parameters": {
-						"object": "Sprite"
+						"object": "sprite"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Sprite2",
+					"objectClass": "TestCoin",
 					"sid": 944431688938563
-				},
-				{
-					"id": "add-to-instvar",
-					"objectClass": "LandingGo3",
-					"sid": 193051399502293,
-					"parameters": {
-						"instance-variable": "Points",
-						"value": "1"
-					}
 				}
 			],
 			"sid": 634763673841730
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 144454350395118,
-					"parameters": {
-						"object": "LandingGo3"
-					}
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "LandingGo3",
-					"sid": 460340738069792,
-					"parameters": {
-						"instance-variable": "Points",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
 					"sid": 811175070926356,
 					"parameters": {
-						"object-to-create": "Sprite4",
+						"object-to-create": "TestTwoStar",
 						"layer": "0",
 						"x": "100",
 						"y": "265",
@@ -72,33 +44,14 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 404225140037581,
-					"parameters": {
-						"object": "LandingGo3"
-					}
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "LandingGo3",
-					"sid": 843468805045713,
-					"parameters": {
-						"instance-variable": "Points",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
 					"sid": 603284695611065,
 					"parameters": {
-						"object-to-create": "Sprite3",
+						"object-to-create": "TestOneStar",
 						"layer": "0",
 						"x": "100",
 						"y": "265",
@@ -111,23 +64,14 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 987621338378340,
-					"parameters": {
-						"object": "LandingGo3"
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
 					"sid": 318545992253613,
 					"parameters": {
-						"object-to-create": "Reset",
+						"object-to-create": "motionResetButton",
 						"layer": "0",
 						"x": "200",
 						"y": "265",
@@ -159,7 +103,7 @@
 					"objectClass": "Touch",
 					"sid": 697033351424803,
 					"parameters": {
-						"object": "Reset"
+						"object": "motionResetButton"
 					}
 				}
 			],

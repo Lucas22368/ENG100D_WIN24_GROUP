@@ -1,0 +1,258 @@
+{
+	"name": "Emission Events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "emissionTotal",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 441645031801845
+		},
+		{
+			"eventType": "variable",
+			"name": "carEmission",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 144427859962559
+		},
+		{
+			"eventType": "variable",
+			"name": "busEmission",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 445669556899520
+		},
+		{
+			"eventType": "variable",
+			"name": "bikeEmission",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 649729467409984
+		},
+		{
+			"eventType": "variable",
+			"name": "calculatedCO2Emission",
+			"type": "number",
+			"initialValue": "380",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 817799046502383
+		},
+		{
+			"functionName": "addCarEmission",
+			"functionDescription": "changes emission value",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 888530770688220,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "carEmission"
+					}
+				}
+			],
+			"sid": 805235864340791
+		},
+		{
+			"functionName": "setBikeEmission",
+			"functionDescription": "changes emission value",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 371510626397617,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "bikeEmission"
+					}
+				}
+			],
+			"sid": 638754340580736
+		},
+		{
+			"eventType": "comment",
+			"text": "display bar properties"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 208391592767157,
+					"parameters": {
+						"instance-variable": "barGreenS",
+						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 641731549785490,
+					"parameters": {
+						"instance-variable": "barGreenL",
+						"comparison": 5,
+						"value": "emissionTotal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 934052087817868,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 366999350265580
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 575039898995484,
+					"parameters": {
+						"instance-variable": "barYellowS",
+						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 418588722556103,
+					"parameters": {
+						"instance-variable": "barYellowL",
+						"comparison": 5,
+						"value": "emissionTotal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 545567568516841,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 663255625208468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "emissionBarDisplay",
+					"sid": 280462878274825,
+					"parameters": {
+						"instance-variable": "barRedS",
+						"comparison": 3,
+						"value": "emissionTotal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 908286986251778,
+					"parameters": {
+						"frame-number": "3"
+					}
+				}
+			],
+			"sid": 182824315725937
+		},
+		{
+			"functionName": "subCarEmission",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 167988777367518,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "carEmission"
+					}
+				}
+			],
+			"sid": 670969730862462
+		},
+		{
+			"functionName": "compareEmissions",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 176810515814900,
+					"parameters": {
+						"variable": "calculatedCO2Emission",
+						"value": "emissionTotal"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "endCO2",
+					"sid": 876874409354136,
+					"parameters": {
+						"text": "round(calculatedCO2Emission/380*100) & \"%\""
+					}
+				}
+			],
+			"sid": 989349193675463
+		}
+	],
+	"sid": 500283305365175
+}

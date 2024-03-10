@@ -1,0 +1,70 @@
+{
+	"name": "StartBike",
+	"plugin-id": "Sprite",
+	"sid": 357977100757409,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 424110325065764
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 160,
+						"height": 111,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1150174,
+						"collisionPoly": {
+							"points": [
+								0.6098901098901099,
+								0.20114942528735633,
+								0.6703296703296703,
+								0.21264367816091953,
+								0.9725274725274725,
+								0.5229885057471264,
+								1,
+								0.5977011494252874,
+								0.967032967032967,
+								0.7586206896551724,
+								0.8241758241758241,
+								0.8448275862068966,
+								0.07692307692307693,
+								0.8045977011494253,
+								0,
+								0.6781609195402298,
+								0.005494505494505495,
+								0.5689655172413793,
+								0.038461538461538464,
+								0.5057471264367817,
+								0.2802197802197802,
+								0.25862068965517243
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 256133958632652,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

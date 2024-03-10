@@ -1,0 +1,964 @@
+{
+	"name": "Level1 Events",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Level1 Tutorial Events"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Motion Events"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Level1 End Screen Events"
+		},
+		{
+			"eventType": "variable",
+			"name": "ResetCheck",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 295326991260535
+		},
+		{
+			"eventType": "comment",
+			"text": "Display Objectives"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 113548623229657
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 571842390336580,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "emissionBarDisplay",
+					"sid": 379032826427627
+				}
+			],
+			"sid": 791223646355806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 294759079642561,
+					"parameters": {
+						"object": "reset"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 276694125024255,
+					"parameters": {
+						"object-to-create": "overlayLevel1",
+						"layer": "7",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "overlayLevel1",
+					"sid": 694482143401291,
+					"parameters": {
+						"width": "480",
+						"height": "854"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 852774284013169,
+					"parameters": {
+						"object-to-create": "ResetPrompt",
+						"layer": "7",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 945057392738521,
+					"parameters": {
+						"object-to-create": "Cancel",
+						"layer": "7",
+						"x": "255",
+						"y": "420",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 485828784770215,
+					"parameters": {
+						"object-to-create": "resetConfrim",
+						"layer": "7",
+						"x": "120",
+						"y": "420",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reset",
+					"sid": 354260718131906
+				},
+				{
+					"id": "destroy",
+					"objectClass": "objectiveButton",
+					"sid": 834892216179404
+				}
+			],
+			"sid": 780358478549287,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 890069748297758,
+					"parameters": {
+						"object": "resetConfrim"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 691625079207656,
+					"parameters": {
+						"variable": "ResetCheck",
+						"value": "false"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 684492829108526,
+					"parameters": {
+						"layout": "Level1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 693828853741435,
+					"parameters": {
+						"variable": "emissionTotal",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 807277571385659,
+					"parameters": {
+						"variable": "timerTotal",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 741486493660822,
+					"parameters": {
+						"variable": "calculatedCO2Emission",
+						"value": "380"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "emissionBarDisplay",
+					"sid": 297380850120088,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "emissionBarDisplay",
+					"sid": 771471064211580
+				}
+			],
+			"sid": 478844185211593,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 562215850984846,
+					"parameters": {
+						"object": "Cancel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "overlayLevel1",
+					"sid": 853063962264763
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cancel",
+					"sid": 759522561887806
+				},
+				{
+					"id": "destroy",
+					"objectClass": "resetConfrim",
+					"sid": 395033772631517
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ResetPrompt",
+					"sid": 271275370250449
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 207134704474127,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 299052553197585,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 760038144130267,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 318830408103317
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 554007154275229,
+					"parameters": {
+						"variable": "ResetCheck"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 530613631841751,
+					"parameters": {
+						"object-to-create": "overlayLevel1",
+						"layer": "7",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "overlayLevel1",
+					"sid": 700875140075307,
+					"parameters": {
+						"width": "480",
+						"height": "854"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 877521377082272,
+					"parameters": {
+						"object-to-create": "Welcome",
+						"layer": "7",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 981894435053618,
+					"parameters": {
+						"object-to-create": "nextButton2",
+						"layer": "7",
+						"x": "349",
+						"y": "511",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reset",
+					"sid": 270214064728719
+				},
+				{
+					"id": "destroy",
+					"objectClass": "objectiveButton",
+					"sid": 471870533782750
+				}
+			],
+			"sid": 250644086099861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 557421587705299,
+					"parameters": {
+						"object": "nextButton2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Welcome",
+					"sid": 573017584902579
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 673387928244761,
+					"parameters": {
+						"object-to-create": "Level1Goal",
+						"layer": "7",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 343292084949976,
+					"parameters": {
+						"object-to-create": "StartTutorial",
+						"layer": "7",
+						"x": "238",
+						"y": "482",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 676757374530010,
+					"parameters": {
+						"object-to-create": "SkipForNow",
+						"layer": "7",
+						"x": "236",
+						"y": "533",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 676504428711539,
+					"parameters": {
+						"object-to-create": "theX",
+						"layer": "7",
+						"x": "371",
+						"y": "258",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "nextButton2",
+					"sid": 231821525254976
+				}
+			],
+			"sid": 442067059137149,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 589595270226379,
+					"parameters": {
+						"object": "SkipForNow"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Level1Goal",
+					"sid": 565374238801262
+				},
+				{
+					"id": "destroy",
+					"objectClass": "StartTutorial",
+					"sid": 502360438497130
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SkipForNow",
+					"sid": 683570931614927
+				},
+				{
+					"id": "destroy",
+					"objectClass": "theX",
+					"sid": 936298633927839
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlayLevel1",
+					"sid": 546845010107042
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 542117973098201,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 354147699263553,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 238360012964393
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 270882300663483,
+					"parameters": {
+						"object": "theX"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Level1Goal",
+					"sid": 878968064583451
+				},
+				{
+					"id": "destroy",
+					"objectClass": "StartTutorial",
+					"sid": 396579153818182
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SkipForNow",
+					"sid": 831237329536519
+				},
+				{
+					"id": "destroy",
+					"objectClass": "theX",
+					"sid": 920584800088598
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlayLevel1",
+					"sid": 349585283823311
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 623268403450478,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 260808612626443,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 845595426173130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 216101597518525,
+					"parameters": {
+						"object": "objectiveButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 647621476041317,
+					"parameters": {
+						"object-to-create": "overlayLevel1",
+						"layer": "7",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "overlayLevel1",
+					"sid": 423445219210100,
+					"parameters": {
+						"width": "480",
+						"height": "854"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 432385564412759,
+					"parameters": {
+						"object-to-create": "Level1Goal",
+						"layer": "7",
+						"x": "230",
+						"y": "388",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 949523778621520,
+					"parameters": {
+						"object-to-create": "StartTutorial",
+						"layer": "7",
+						"x": "238",
+						"y": "482",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 446032564889110,
+					"parameters": {
+						"object-to-create": "theX",
+						"layer": "7",
+						"x": "371",
+						"y": "258",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "reset",
+					"sid": 416237633051176
+				},
+				{
+					"id": "destroy",
+					"objectClass": "objectiveButton",
+					"sid": 932531288279194
+				}
+			],
+			"sid": 575312467009638,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "Display Tutorial Frames"
+		},
+		{
+			"eventType": "variable",
+			"name": "tutorialFrameIdx",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 137348980047809
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 919132039062316,
+					"parameters": {
+						"object": "StartTutorial"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 535597197916590,
+					"parameters": {
+						"object-to-create": "tutorialAnimation",
+						"layer": "7",
+						"x": "240.5",
+						"y": "427.5",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 359980200435226,
+					"parameters": {
+						"object-to-create": "nextButton",
+						"layer": "7",
+						"x": "397",
+						"y": "276",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "tutorialAnimation",
+					"sid": 122814823982040,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "tutorialAnimation",
+					"sid": 526201276311307
+				},
+				{
+					"callFunction": "setTutorialFrame",
+					"sid": 349671384285039
+				},
+				{
+					"id": "destroy",
+					"objectClass": "theX",
+					"sid": 277203934928422
+				},
+				{
+					"id": "destroy",
+					"objectClass": "StartTutorial",
+					"sid": 672074978823610
+				},
+				{
+					"id": "destroy",
+					"objectClass": "SkipForNow",
+					"sid": 176018112149092
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Level1Goal",
+					"sid": 202750492896290
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 562691683302201,
+					"parameters": {
+						"object-to-create": "fakereset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 402238789897219,
+					"parameters": {
+						"object-to-create": "fakeobjectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 983459295477058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 663935904667466,
+					"parameters": {
+						"object": "nextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "tutorialAnimation",
+					"sid": 757948159910789,
+					"parameters": {
+						"frame-number": "tutorialFrameIdx"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "tutorialAnimation",
+					"sid": 217896053452668
+				},
+				{
+					"callFunction": "setTutorialFrame",
+					"sid": 969199556475133
+				}
+			],
+			"sid": 926728503835889,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 254568969614160,
+							"parameters": {
+								"first-value": "tutorialFrameIdx",
+								"comparison": 5,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "tutorialAnimation",
+							"sid": 101088500386058,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "nextButton",
+							"sid": 204309771951738
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 445374341693202,
+							"parameters": {
+								"object-to-create": "playButton",
+								"layer": "7",
+								"x": "370",
+								"y": "720",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 675508141824566
+				}
+			]
+		},
+		{
+			"functionName": "setTutorialFrame2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 523082429496926,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 899290612654367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 704252351546414,
+					"parameters": {
+						"object": "playButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "tutorialAnimation",
+					"sid": 715147711094396
+				},
+				{
+					"id": "destroy",
+					"objectClass": "playButton",
+					"sid": 831770013867977
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 102811190387018,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "overlayLevel1",
+					"sid": 958432044728584
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 992908771152262,
+					"parameters": {
+						"object-to-create": "reset",
+						"layer": "7",
+						"x": "430",
+						"y": "45",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 634779542702882,
+					"parameters": {
+						"object-to-create": "objectiveButton",
+						"layer": "7",
+						"x": "16",
+						"y": "16",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fakeobjectiveButton",
+					"sid": 463124867783680
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fakereset",
+					"sid": 315224208739199
+				}
+			],
+			"sid": 333657753893654
+		},
+		{
+			"eventType": "script",
+			"script": ""
+		}
+	],
+	"sid": 462271210908144
+}

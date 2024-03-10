@@ -1,9 +1,24 @@
 {
-	"name": "Sprite",
+	"name": "sprite",
 	"plugin-id": "Sprite",
 	"sid": 860533236677990,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "XVal",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 778030151542329
+		},
+		{
+			"name": "YVal",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 564301319993761
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
@@ -24,7 +39,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9370484,
+						"imageSpriteId": 6857525,
 						"collisionPoly": {
 							"points": [
 								0.24561403508771928,

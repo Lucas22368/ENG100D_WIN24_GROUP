@@ -1,0 +1,54 @@
+{
+	"name": "CarSwitch",
+	"plugin-id": "Sprite",
+	"sid": 248445626192348,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 512,
+						"height": 512,
+						"originX": 0.5614035087719298,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7044584,
+						"collisionPoly": {
+							"points": [
+								0.24561403508771928,
+								0.029411764705882353,
+								0.7894736842105263,
+								0.058823529411764705,
+								0.9824561403508771,
+								0.2647058823529412,
+								0.9122807017543859,
+								0.9705882352941176,
+								0.05263157894736842,
+								0.9411764705882353,
+								0.05263157894736842,
+								0.23529411764705882
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 748744733012259,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

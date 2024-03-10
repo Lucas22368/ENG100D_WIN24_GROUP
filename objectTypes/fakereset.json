@@ -1,0 +1,62 @@
+{
+	"name": "fakereset",
+	"plugin-id": "Sprite",
+	"sid": 338294485240248,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2661229,
+						"collisionPoly": {
+							"points": [
+								0.4921875,
+								0.08203125,
+								0.7734375,
+								0.18359375,
+								0.81640625,
+								0.2265625,
+								0.916015625,
+								0.54296875,
+								0.81640625,
+								0.7734375,
+								0.7734375,
+								0.81640625,
+								0.4921875,
+								0.91796875,
+								0.193359375,
+								0.77734375,
+								0.08203125,
+								0.359375,
+								0.111328125,
+								0.146484375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 818829223708269,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"name": "fakeobjectiveButton",
+	"plugin-id": "Sprite",
+	"sid": 865839293947091,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6518057,
+						"collisionPoly": {
+							"points": [
+								0.4375,
+								0.025,
+								0.5625,
+								0.025,
+								1,
+								0.275,
+								1,
+								0.4,
+								0.875,
+								0.9625,
+								0.125,
+								0.9625,
+								0,
+								0.4,
+								0,
+								0.275
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 174660052806515,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

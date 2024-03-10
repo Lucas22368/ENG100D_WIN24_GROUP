@@ -1,0 +1,46 @@
+{
+	"name": "leaf3",
+	"plugin-id": "Sprite",
+	"sid": 796156336944935,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "leaf3Achieved",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 352811705037775
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 45,
+						"height": 54,
+						"originX": 0.4444444444444444,
+						"originY": 2.1481481481481484,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3821026,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 540264889447229,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

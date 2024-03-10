@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "sprite",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -16,7 +16,10 @@
 						"live-preview": false
 					},
 					"uid": 43,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"XVal": 0,
+						"YVal": 0
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
@@ -49,7 +52,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "TestCoin",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -63,59 +66,9 @@
 					"world": {
 						"x": 133,
 						"y": 324,
-						"width": 28,
+						"width": 28.000000000000004,
 						"height": 38,
 						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "LandingGo3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 45,
-					"instanceVariables": {
-						"Points": 0
-					},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 2,
-								"wait-time": 0,
-								"fade-out-time": 0,
-								"destroy": false,
-								"enabled": false,
-								"live-preview": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 407,
-						"y": 53,
-						"width": 120,
-						"height": 40,
-						"originX": 0.5495495495495496,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -223,7 +176,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "StarText",
 					"properties": {
 						"text": "Submit",
 						"enable-bbcode": true,

@@ -1,0 +1,58 @@
+{
+	"name": "objectiveButton",
+	"plugin-id": "Sprite",
+	"sid": 427177590899051,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 69138,
+						"collisionPoly": {
+							"points": [
+								0.4375,
+								0.025,
+								0.5625,
+								0.025,
+								1,
+								0.275,
+								1,
+								0.4,
+								0.875,
+								0.9625,
+								0.125,
+								0.9625,
+								0,
+								0.4,
+								0,
+								0.275
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 149407742857578,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

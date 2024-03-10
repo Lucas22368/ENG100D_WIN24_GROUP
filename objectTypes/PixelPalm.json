@@ -1,0 +1,54 @@
+{
+	"name": "PixelPalm",
+	"plugin-id": "Sprite",
+	"sid": 134329193145771,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 347,
+						"height": 830,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 967041,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.2433734939759036,
+								0.8962536023054755,
+								0.24457831325301205,
+								1,
+								0.5710843373493976,
+								0.962536023054755,
+								0.6373493975903615,
+								0.2564841498559078,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 330763765944903,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

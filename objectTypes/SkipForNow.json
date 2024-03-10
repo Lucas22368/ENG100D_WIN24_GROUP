@@ -1,0 +1,58 @@
+{
+	"name": "SkipForNow",
+	"plugin-id": "Sprite",
+	"sid": 985819313209692,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8941487,
+						"collisionPoly": {
+							"points": [
+								0.11363636363636363,
+								0,
+								0.4431818181818182,
+								0,
+								0.9886363636363636,
+								0.26666666666666666,
+								1,
+								0.8666666666666667,
+								0.25,
+								0.9333333333333333,
+								0,
+								0.8666666666666667,
+								0.011363636363636364,
+								0.13333333333333333,
+								0.022727272727272728,
+								0.06666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 274157985440367,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

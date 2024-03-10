@@ -1,0 +1,206 @@
+{
+	"name": "Level1 Tutorial Events",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Must be included in Level 1 Events for tutorial to work"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 554578735825149,
+					"parameters": {
+						"object": "tutorialButtonTemp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 389711935269982,
+					"parameters": {
+						"object-to-create": "tutorialAnimation",
+						"layer": "7",
+						"x": "240.5",
+						"y": "427.5",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 562215515349090,
+					"parameters": {
+						"object-to-create": "nextButton",
+						"layer": "7",
+						"x": "397",
+						"y": "276",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "tutorialAnimation",
+					"sid": 462490808802296,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "tutorialAnimation",
+					"sid": 889649769851170
+				},
+				{
+					"callFunction": "setTutorialFrame",
+					"sid": 916215126946836
+				}
+			],
+			"sid": 455171560008073
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 115142853304747,
+					"parameters": {
+						"object": "motionResetText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "tutorialAnimation",
+					"sid": 707560611471526,
+					"parameters": {
+						"frame-number": "tutorialFrameIdx"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "tutorialAnimation",
+					"sid": 151884529368036
+				},
+				{
+					"callFunction": "setTutorialFrame",
+					"sid": 882436081915680
+				}
+			],
+			"sid": 677322850224753,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 251886446609969,
+							"parameters": {
+								"first-value": "tutorialFrameIdx",
+								"comparison": 5,
+								"second-value": "40000"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "tutorialAnimation",
+							"sid": 495283711237581,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "nextButton",
+							"sid": 648957740847592
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 367406395516952,
+							"parameters": {
+								"object-to-create": "playButton",
+								"layer": "7",
+								"x": "409",
+								"y": "781",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 199257544211271
+				}
+			]
+		},
+		{
+			"functionName": "setTutorialFrame",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 973609013778986,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 931517290098364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 226180730685689,
+					"parameters": {
+						"object": "motionResetText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "tutorialAnimation",
+					"sid": 174889211881228
+				},
+				{
+					"id": "destroy",
+					"objectClass": "playButton",
+					"sid": 943266879662825
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 921370957734119,
+					"parameters": {
+						"variable": "tutorialFrameIdx",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 660801688563083
+		}
+	],
+	"sid": 130942401915454
+}

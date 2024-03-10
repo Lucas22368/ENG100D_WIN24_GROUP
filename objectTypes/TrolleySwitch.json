@@ -1,0 +1,62 @@
+{
+	"name": "TrolleySwitch",
+	"plugin-id": "Sprite",
+	"sid": 741930748348688,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 39,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 1,
+						"imageSpriteId": 3539843,
+						"collisionPoly": {
+							"points": [
+								0.15384615384615385,
+								0.018518518518518517,
+								0.8461538461538461,
+								0.018518518518518517,
+								0.9230769230769231,
+								0.05555555555555555,
+								0.9743589743589743,
+								0.12962962962962962,
+								0.9743589743589743,
+								0.7407407407407407,
+								0.9487179487179487,
+								0.9814814814814815,
+								0.05128205128205128,
+								0.9814814814814815,
+								0.02564102564102564,
+								0.7407407407407407,
+								0.02564102564102564,
+								0.1111111111111111,
+								0.07692307692307693,
+								0.05555555555555555
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 886174794278762,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
