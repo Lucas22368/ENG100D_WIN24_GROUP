@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "SVGPicture",
+			"name": "SVG Picture",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -167,7 +174,14 @@
 			"fakeobjectiveButton",
 			"fakereset",
 			"BikeHighlight",
-			"CarHighlight"
+			"CarHighlight",
+			"SVGPicture",
+			"Sprite12",
+			"SVGPicture2",
+			"Sprite15",
+			"Sprite16",
+			"Sprite17",
+			"Sprite18"
 		],
 		"subfolders": []
 	},
@@ -348,6 +362,22 @@
 					"sid": 974791461869861,
 					"icon-info": {
 						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "transit options LOCKED.png",
+					"type": "image/png",
+					"sid": 772420346638381,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "transit options BIKE.png",
+					"type": "image/png",
+					"sid": 118565022488729,
+					"icon-info": {
+						"purpose": "none"
 					}
 				}
 			],
